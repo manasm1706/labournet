@@ -591,82 +591,81 @@ export const translations: Translations = {
     "project.post": "परियोजना पोस्ट करें"
   },
   
-  hi: {
+  mr: {
     // Header
     "header.dashboard": "डैशबोर्ड",
-    "header.story": "हमारी कहानी",
-    "header.marketplace": "बाज़ार",
-    "header.getInTouch": "संपर्क करें",
+    "header.story": "आमची कथा",
+    "header.marketplace": "बाजारपेठ",
+    "header.getInTouch": "संपर्क साधा",
     
     // Navigation
     "nav.dashboard": "डैशबोर्ड",
-    "nav.projects": "परियोजनाएँ",
+    "nav.projects": "प्रकल्प",
     "nav.messages": "संदेश",
     "nav.analytics": "विश्लेषण",
-    "nav.profile": "प्रोफ़ाइल",
-    "nav.workers": "कर्मचारी",
-    "nav.jobs": "नौकरियाँ",
+    "nav.profile": "प्रोफाइल",
+    "nav.workers": "कामगार",
+    "nav.jobs": "नोकरी",
     
     // Footer
     "footer.labourHub": "लेबर हब",
-    "footer.rights": "सर्वाधिकार सुरक्षित 2024",
+    "footer.rights": "सर्व अधिकार राखीव 2024",
     "footer.labourNet": "लेबरनेट",
-    "footer.aboutUs": "हमारे बारे में",
-    "footer.ourWork": "हमारा काम",
+    "footer.aboutUs": "आमच्याबद्दल",
+    "footer.ourWork": "आमचे कार्य",
     "footer.linkedin": "लिंक्डइन",
-    "footer.contactUs": "संपर्क करें",
-    "footer.copyright": "2024 लेबरनेट. सर्वाधिकार सुरक्षित।",
-    "footer.privacy": "गोपनीयता नीति",
-    "footer.terms": "सेवा की शर्तें",
-    "footer.cookies": "कुकीज़ सेटिंग्स",
+    "footer.contactUs": "संपर्क साधा",
+    "footer.copyright": "2024 लेबरनेट. सर्व अधिकार राखीव.",
+    "footer.privacy": "गोपनीयता धोरण",
+    "footer.terms": "सेवेचे नियम",
+    "footer.cookies": "कुकीज सेटिंग्ज",
     
     // Hero section
-    "hero.title": "निर्माताओं को सशक्त बनाना",
-    "hero.subtitle": "कुशल पेशेवरों और ठेकेदारों के समुदाय से जुड़ें।",
-    "hero.button": "अपनी यात्रा शुरू करें",
+    "hero.title": "बांधकाम व्यावसायिकांना सक्षम करणे",
+    "hero.subtitle": "कुशल व्यावसायिक आणि कंत्राटदारांच्या समुदायात सामील व्हा.",
+    "hero.button": "आपल्या प्रवासाला सुरुवात करा",
     
     // Achievement section
-    "achievements.title": "हमारी उपलब्धियों का अन्वेषण करें",
-    "achievements.subtitle": "देखें कि हम निर्माताओं और ठेकेदारों का समर्थन कैसे करते हैं।",
+    "achievements.title": "आमच्या उपलब्धी शोधा",
+    "achievements.subtitle": "आम्ही बांधकाम व्यावसायिक आणि कंत्राटदारांना कसा पाठिंबा देतो ते पहा.",
     
     // Gallery section
-    "gallery.title": "निर्माता क्रांति में शामिल हों",
-    "gallery.subtitle": "हम आपको सफल होने के लिए आवश्यक उपकरण और संपर्क प्रदान करते हैं।",
-    "gallery.button": "शामिल हों",
+    "gallery.title": "बांधकाम क्रांतीमध्ये सामील व्हा",
+    "gallery.subtitle": "आम्ही आपल्याला आवश्यक साधने आणि कनेक्शन प्रदान करतो.",
+    "gallery.button": "सहभागी व्हा",
     
     // Contact section
-    "contact.title": "संपर्क करें",
-    "contact.subtitle": "क्या आपके कोई प्रश्न हैं या हमारी सेवाओं के बारे में अधिक जानना चाहते हैं? सीधे हमसे संपर्क करें या फॉर्म भरें।",
-    "contact.info": "संपर्क जानकारी",
+    "contact.title": "संपर्क साधा",
+    "contact.subtitle": "प्रश्न आहेत किंवा आमच्या सेवांबद्दल अधिक जाणून घ्यायचे आहे? थेट आमच्याशी संपर्क साधा किंवा फॉर्म भरा.",
+    "contact.info": "संपर्क माहिती",
     "contact.email": "ईमेल:",
     "contact.phone": "फोन:",
-    "contact.address": "पता:",
+    "contact.address": "पत्ता:",
     
     // Journey page
-    "journey.title": "लेबरनेट के साथ अपनी यात्रा शुरू करें",
-    "journey.subtitle": "वह भूमिका चुनें जो आपकी आवश्यकताओं के लिए सबसे उपयुक्त है और अपने निर्माण करियर की यात्रा आज ही शुरू करें",
-    "journey.readyText": "अगला कदम उठाने के लिए तैयार हैं? अपना प्रोफाइल बनाएं और अवसरों का अन्वेषण करें।",
-    "journey.createProfile": "अपना प्रोफाइल बनाएं",
+    "journey.title": "लेबरनेट सोबत आपल्या प्रवासाला सुरुवात करा",
+    "journey.subtitle": "आपल्या गरजेनुसार योग्य भूमिका निवडा आणि आजच आपल्या बांधकाम कारकिर्दीच्या प्रवासाला सुरुवात करा",
+    "journey.readyText": "पुढील पाऊल उचलण्यास तयार आहात? आपली प्रोफाइल तयार करा आणि संधी शोधा.",
+    "journey.createProfile": "आपली प्रोफाइल तयार करा",
     
     // Worker role
-    "role.worker.title": "निर्माण श्रमिक",
-    "role.worker.description": "हमारे कुशल निर्माण श्रमिकों के नेटवर्क से जुड़ें और विभिन्न परियोजनाओं में नियमित रोजगार के अवसर प्राप्त करें।",
-    "role.worker.feature1": "दैनिक और साप्ताहिक नौकरी के अवसरों तक पहुंच",
-    "role.worker.feature2": "प्रतिस्पर्धी वेतन दर",
-    "role.worker.feature3": "कौशल विकास और प्रशिक्षण",
-    "role.worker.feature4": "सुरक्षा उपकरण और दिशानिर्देश",
+    "role.worker.title": "बांधकाम कामगार",
+    "role.worker.description": "कुशल बांधकाम कामगारांच्या आमच्या नेटवर्कमध्ये सामील व्हा आणि विविध प्रकल्पांमध्ये नियमित रोजगाराच्या संधी शोधा.",
+    "role.worker.feature1": "दैनिक आणि साप्ताहिक नोकरीच्या संधींमध्ये प्रवेश",
+    "role.worker.feature2": "स्पर्धात्मक वेतन दर",
+    "role.worker.feature3": "कौशल्य विकास आणि प्रशिक्षण",
+    "role.worker.feature4": "सुरक्षा उपकरणे आणि मार्गदर्शक तत्त्वे",
     
     // Professional role
-    "role.professional.title": "पेशेवर निर्माता",
-    "role.professional.description": "इलेक्ट्रिकल, प्लंबिंग, कारपेंट्री और अन्य विशेष ट्रेडों में लाइसेंस प्राप्त पेशेवरों के लिए। क्लाइंट्स और प्रोजेक्ट्स से सीधे जुड़ें।",
-    "role.professional.feature1": "अपने प्रमाणपत्र और पोर्टफोलियो का प्रदर्शन करें",
-    "role.professional.feature2": "ठेकेदारों और ग्राहकों से जुड़ें",
-    "role.professional.feature3": "अपनी उपलब्धता और बुकिंग का प्रबंधन करें",
-    "role.professional.feature4": "हमारे प्लेटफॉर्म के माध्यम से सुरक्षित भुगतान प्राप्त करें",
+    "role.professional.title": "व्यावसायिक बांधकाम व्यावसायिक",
+    "role.professional.description": "इलेक्ट्रिकल, प्लंबिंग, सुतारकाम आणि इतर विशेष व्यवसायांमधील परवानाधारक व्यावसायिकांसाठी. क्लायंट आणि प्रोजेक्टशी थेट कनेक्ट व्हा.",
+    "role.professional.feature1": "आपले प्रमाणपत्र आणि पोर्टफोलिओ प्रदर्शित करा",
+    "role.professional.feature2": "कंत्राटदार आणि क्लायंटशी कनेक्ट व्हा",
+    "role.professional.feature3": "आपली उपलब्धता आणि बुकिंग व्यवस्थापित करा",
+    "role.professional.feature4": "आमच्या प्लॅटफॉर्मद्वारे सुरक्षितपणे पैसे मिळवा",
     
     // Contractor role
-    "role.contractor.title": "ठेकेदार",
-    "role.contractor.description": "अपनी परियोजना प्रबंधन को सुव्यवस्थित करें और प्रत्येक कार्य के लिए सही श्रमिकों को ढूंढें। अपने निर्माण परियोजनाओं के लिए विश्वसनीय टीमें बनाएं।",
-    "role.contractor.feature1": "नौकरियां पोस्ट करें और जल्दी से योग्य श्रमिकों को ढूंढें",
-    "role.contractor.feature2": "श्रमिकों की योग्यता और अनुभव सत्यापित करें",
-    "role.contractor.feature3": "भुगतान और दस्तावेज़ीकरण
+    "role.contractor.title": "कंत्राटदार",
+    "role.contractor.description": "आपले प्रकल्प व्यवस्थापन सुव्यवस्थित करा आणि प्रत्येक कामासाठी योग्य कामगार शोधा. आपल्या बांधकाम प्रकल्पांसाठी विश्वसनीय टीम तयार करा.",
+    "role.contractor.feature1": "नोकरी पोस्ट करा आणि त्वरित पात्र कामगार शोधा",
+    "role
