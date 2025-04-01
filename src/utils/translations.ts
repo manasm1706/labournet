@@ -1,3 +1,4 @@
+
 export type AvailableLanguages = "en" | "hi" | "mr" | "te" | "ml" | "ta" | "kn" | "gu" | "pa";
 
 // Define the structure of our translations
@@ -593,13 +594,13 @@ export const translations: Translations = {
   
   mr: {
     // Header
-    "header.dashboard": "डैशबोर्ड",
+    "header.dashboard": "डॅशबोर्ड",
     "header.story": "आमची कथा",
     "header.marketplace": "बाजारपेठ",
-    "header.getInTouch": "संपर्क साधा",
+    "header.getInTouch": "संपर्क करा",
     
     // Navigation
-    "nav.dashboard": "डैशबोर्ड",
+    "nav.dashboard": "डॅशबोर्ड",
     "nav.projects": "प्रकल्प",
     "nav.messages": "संदेश",
     "nav.analytics": "विश्लेषण",
@@ -668,4 +669,120 @@ export const translations: Translations = {
     "role.contractor.title": "कंत्राटदार",
     "role.contractor.description": "आपले प्रकल्प व्यवस्थापन सुव्यवस्थित करा आणि प्रत्येक कामासाठी योग्य कामगार शोधा. आपल्या बांधकाम प्रकल्पांसाठी विश्वसनीय टीम तयार करा.",
     "role.contractor.feature1": "नोकरी पोस्ट करा आणि त्वरित पात्र कामगार शोधा",
-    "role
+    "role.contractor.feature2": "कामगारांची योग्यता आणि अनुभव सत्यापित करा",
+    "role.contractor.feature3": "देयके आणि कागदपत्रे व्यवस्थापित करा",
+    "role.contractor.feature4": "प्रकल्प प्रगती आणि टीम कामगिरी ट्रॅक करा",
+    
+    // Login
+    "login.worker.title": "स्वागत आहे, कुशल कामगार!",
+    "login.worker.subtitle": "आपल्या प्रोफाइल मध्ये प्रवेश करा, नोकरी अर्ज ट्रॅक करा, आणि आपल्या क्षेत्रातील शीर्ष कंत्राटदारांशी जोडणी करा.",
+    "login.professional.title": "स्वागत आहे, व्यावसायिक बांधकामदार!",
+    "login.professional.subtitle": "आपल्या व्यावसायिक डॅशबोर्डमध्ये प्रवेश करा, आपल्या सेवा व्यवस्थापित करा, आणि क्लायंटशी जोडणी करा.",
+    "login.contractor.title": "स्वागत आहे, कंत्राटदार!",
+    "login.contractor.subtitle": "आपल्या व्यवसाय डॅशबोर्डमध्ये प्रवेश करा, प्रकल्प व्यवस्थापित करा, आणि आपल्या बांधकाम गरजांसाठी कुशल कामगार शोधा.",
+    
+    // Worker profile
+    "profile.title": "प्रोफाइल माहिती",
+    "profile.edit": "प्रोफाइल संपादित करा",
+    "profile.save": "प्रोफाइल जतन करा",
+    "profile.name": "पूर्ण नाव",
+    "profile.professionalTitle": "व्यावसायिक शीर्षक",
+    "profile.email": "ईमेल",
+    "profile.phone": "फोन",
+    "profile.location": "स्थान",
+    "profile.experience": "अनुभवाची वर्षे",
+    "profile.hourlyRate": "तासाचा दर ($)",
+    "profile.about": "माझ्याबद्दल",
+    "profile.back": "डॅशबोर्डवर परत जा",
+    "profile.cancel": "रद्द करा",
+
+    // Worker Dashboard translations
+    "worker.dashboard.title": "कामगार डॅशबोर्ड",
+    "worker.dashboard.welcome": "पुन्हा स्वागत आहे",
+    "worker.dashboard.activeJobs": "सक्रिय नोकऱ्या",
+    "worker.dashboard.applications": "अर्ज",
+    "worker.dashboard.earnings": "एकूण कमाई",
+    "worker.dashboard.findJobs": "नोकऱ्या शोधा",
+    "worker.dashboard.skills": "माझे कौशल्ये",
+    "worker.dashboard.recentActivity": "अलीकडील क्रियाकलाप",
+    "worker.dashboard.upcomingJobs": "आगामी नोकऱ्या",
+
+    // Active Work translations
+    "activeWork.title": "माझे सक्रिय काम",
+    "activeWork.ongoing": "सुरू असलेले प्रकल्प",
+    "activeWork.upcoming": "आगामी प्रकल्प",
+    "activeWork.completed": "पूर्ण केलेले प्रकल्प",
+    "activeWork.noProjects": "कोणतेही सक्रिय प्रकल्प आढळले नाहीत",
+    "activeWork.viewDetails": "तपशील पहा",
+
+    // Job Info translations
+    "jobInfo.title": "नोकरी तपशील",
+    "jobInfo.description": "वर्णन",
+    "jobInfo.requirements": "आवश्यकता",
+    "jobInfo.location": "स्थान",
+    "jobInfo.duration": "कालावधी",
+    "jobInfo.salary": "वेतन",
+    "jobInfo.apply": "आता अर्ज करा",
+    "jobInfo.contact": "नियोक्त्याशी संपर्क साधा",
+    "jobInfo.posted": "पोस्ट केले",
+    "jobInfo.deadline": "अर्जाची अंतिम तारीख",
+
+    // Professional Profile translations
+    "professionalProfile.title": "व्यावसायिक प्रोफाइल",
+    "professionalProfile.subtitle": "आपले व्यावसायिक तपशील आणि पोर्टफोलिओ व्यवस्थापित करा",
+    "professionalProfile.details": "वैयक्तिक तपशील",
+    "professionalProfile.portfolio": "पोर्टफोलिओ",
+    "professionalProfile.certifications": "प्रमाणपत्रे",
+    "professionalProfile.reviews": "क्लायंट पुनरावलोकने",
+    "professionalProfile.addProject": "पोर्टफोलिओ प्रकल्प जोडा",
+    "professionalProfile.addCertification": "प्रमाणपत्र जोडा",
+
+    // Project Details translations
+    "projectDetails.title": "प्रकल्प तपशील",
+    "projectDetails.description": "प्रकल्प वर्णन",
+    "projectDetails.requirements": "आवश्यकता",
+    "projectDetails.timeline": "प्रकल्प कालरेखा",
+    "projectDetails.budget": "प्रकल्प बजेट",
+    "projectDetails.location": "स्थान",
+    "projectDetails.apply": "या प्रकल्पासाठी अर्ज करा",
+    "projectDetails.contact": "क्लायंटशी संपर्क साधा",
+    "projectDetails.share": "प्रकल्प सामायिक करा",
+    "projectDetails.similar": "समान प्रकल्प",
+
+    // Professional Messages translations
+    "messages.title": "संदेश",
+    "messages.inbox": "इनबॉक्स",
+    "messages.sent": "पाठवलेले",
+    "messages.archived": "संग्रहित",
+    "messages.compose": "संदेश लिहा",
+    "messages.search": "संदेश शोधा...",
+    "messages.noMessages": "कोणतेही संदेश आढळले नाहीत",
+    "messages.reply": "उत्तर द्या",
+    "messages.delete": "हटवा",
+    "messages.archive": "संग्रहित करा"
+  },
+  
+  te: {
+    // ... translations for Telugu language can be added here
+  },
+  
+  ml: {
+    // ... translations for Malayalam language can be added here
+  },
+  
+  ta: {
+    // ... translations for Tamil language can be added here
+  },
+  
+  kn: {
+    // ... translations for Kannada language can be added here
+  },
+  
+  gu: {
+    // ... translations for Gujarati language can be added here
+  },
+  
+  pa: {
+    // ... translations for Punjabi language can be added here
+  }
+};
