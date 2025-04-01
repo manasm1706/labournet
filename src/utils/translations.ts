@@ -303,7 +303,6 @@ export const translations: Translations = {
     "professional.status": "स्थिति"
   },
   
-  // Continue with translations for other languages - keeping them short for brevity
   mr: {
     // Header
     "header.dashboard": "डॅशबोर्ड",
@@ -591,4 +590,31 @@ export const translations: Translations = {
     "professional.allProjects": "ಎಲ್ಲಾ ಯೋಜನೆಗಳು",
     "professional.active": "ಸಕ್ರಿಯ",
     "professional.completed": "ಪೂರ್ಣಗೊಂಡಿದೆ",
-    "professional
+    "professional.noProjects": "ಇನ್ನೂ ಯೋಜನೆಗಳಿಲ್ಲ",
+    "professional.noProjectsDesc": "ನೀವು ಇನ್ನೂ ಯಾವುದೇ ಯೋಜನೆಗಳನ್ನು ಪೋಸ್ಟ್ ಮಾಡಿಲ್ಲ. ಪ್ರಾರಂಭಿಸಲು ನಿಮ್ಮ ಮೊದಲ ಯೋಜನೆಯನ್ನು ರಚಿಸಿ!",
+    "professional.postFirst": "ನಿಮ್ಮ ಮೊದಲ ಯೋಜನೆಯನ್ನು ಪೋಸ್ಟ್ ಮಾಡಿ",
+    "professional.postProject": "ನಿಮ್ಮ ಯೋಜನೆಯನ್ನು ಪೋಸ್ಟ್ ಮಾಡಿ",
+    "professional.fillForm": "ಹೊಸ ಯೋಜನೆಯನ್ನು ರಚಿಸಲು ಕೆಳಗಿನ ಫಾರ್ಮ್ ಅನ್ನು ಭರ್ತಿಮಾಡಿ.",
+    "professional.activeProjects": "ಸಕ್ರಿಯ ಯೋಜನೆಗಳು",
+    "professional.applicationsReceived": "ಸ್ವೀಕರಿಸಿದ ಅರ್ಜಿಗಳು",
+    "professional.workersHired": "ನೇಮಕ ಮಾಡಿದ ಕಾರ್ಮಿಕರು",
+    "professional.averageRating": "ಸರಾಸರಿ ರೇಟಿಂಗ್",
+    "professional.status": "ಸ್ಥಿತಿ"
+  },
+  
+  gu: {
+    "header.dashboard": "ડેશબોર્ડ",
+    "header.story": "અમારી કહાણી",
+    "header.marketplace": "માર્કેટપ્લેસ",
+    "header.getInTouch": "સંપર્ક કરો",
+    "professional.status": "સ્થિતિ"
+  },
+  
+  pa: {
+    "header.dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "header.story": "ਸਾਡੀ ਕਹਾਣੀ",
+    "header.marketplace": "ਮਾਰਕੀਟਪਲੇਸ",
+    "header.getInTouch": "ਸੰਪਰਕ ਕਰੋ",
+    "professional.status": "ਸਥਿਤੀ"
+  }
+};
