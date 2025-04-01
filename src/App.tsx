@@ -8,6 +8,7 @@ import { useEffect } from "react";
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Index from "./pages/Index";
 import Journey from "./pages/Journey";
+import OurStory from "./pages/OurStory";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import WorkerDashboard from "./pages/WorkerDashboard";
@@ -26,7 +27,8 @@ import CompanyProfile from "./pages/CompanyProfile";
 import ProjectDetailView from "./pages/ProjectDetailView";
 import Workers from "./pages/Workers";
 import AppointWorkers from "./pages/AppointWorkers";
-import Analytics from "./pages/Analytics";
+import ContractorAnalytics from "./pages/Analytics";
+import ProfessionalAnalytics from "./pages/ProfessionalAnalytics";
 import { ProjectProvider } from "./components/PostProjectForm";
 
 const queryClient = new QueryClient();
@@ -80,6 +82,7 @@ const App = () => (
             <BrowserRouter>
               <Routes>
                 <Route path="/" element={<Index />} />
+                <Route path="/our-story" element={<OurStory />} />
                 <Route path="/journey" element={<Journey />} />
                 <Route path="/login" element={<Login />} />
                 <Route path="/worker-dashboard" element={<WorkerDashboard />} />
@@ -99,7 +102,8 @@ const App = () => (
                 <Route path="/project-detail-view/:id" element={<ProjectDetailView />} />
                 <Route path="/workers" element={<Workers />} />
                 <Route path="/appoint-workers" element={<AppointWorkers />} />
-                <Route path="/analytics" element={<Analytics />} />
+                <Route path="/analytics" element={<ContractorAnalytics />} />
+                <Route path="/professional-analytics" element={<ProfessionalAnalytics />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

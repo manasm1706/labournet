@@ -62,10 +62,10 @@ const ProfessionalNavbar: React.FC = () => {
           </NavigationMenuItem>
           <NavigationMenuItem>
             <Link 
-              to="/analytics"
+              to="/professional-analytics"
               className={cn(
                 "text-white hover:text-[#FF4B55] transition-colors",
-                currentPath === "/analytics" && "text-[#FF4B55]"
+                currentPath === "/professional-analytics" && "text-[#FF4B55]"
               )}
             >
               {t("nav.analytics")}

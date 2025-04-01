@@ -1,4 +1,3 @@
-
 export type AvailableLanguages = "en" | "hi" | "mr" | "te" | "ml" | "ta" | "kn" | "gu" | "pa";
 
 // Define the structure of our translations
@@ -30,30 +29,36 @@ export const translations: Translations = {
     
     // Footer
     "footer.labourHub": "Labour Hub",
-    "footer.rights": "All rights reserved 2024",
+    "footer.rights": "All rights reserved",
     "footer.labourNet": "LabourNet",
-    "footer.aboutUs": "About Us",
+    "footer.aboutUs": "Our Story",
     "footer.ourWork": "Our Work",
     "footer.linkedin": "LinkedIn",
     "footer.contactUs": "Contact Us",
-    "footer.copyright": "2024 LabourNet. All rights reserved.",
+    "footer.copyright": "LabourNet. All rights reserved.",
     "footer.privacy": "Privacy Policy",
     "footer.terms": "Terms of Service",
     "footer.cookies": "Cookies Settings",
+    "footer.quickLinks": "Quick Links",
+    "footer.services": "Our Services",
+    "footer.projectManagement": "Project Management",
+    "footer.ourServices": "Our Services",
     
     // Hero section
-    "hero.title": "Empowering Builders Everywhere",
-    "hero.subtitle": "Join a community of skilled professionals and contractors.",
+    "hero.title": "Empowering Construction, Building Futures",
+    "hero.subtitle": "Connecting builders, contractors, and workers through a smart, digital platform.",
     "hero.button": "Start Your Journey",
     
-    // Achievement section
-    "achievements.title": "Explore Our Achievements",
-    "achievements.subtitle": "See how we support builders and contractors.",
+    // Achievement Section
+    "achievement.title": "Our Achievements",
+    "achievement.projectsCompleted": "Projects Completed",
+    "achievement.workersEmployed": "Workers Employed",
+    "achievement.contractorsConnected": "Contractors Connected",
+    "achievement.countriesActive": "Countries Active",
     
-    // Gallery section
-    "gallery.title": "Join the Builder Revolution",
-    "gallery.subtitle": "We provide the tools and connections you need to thrive.",
-    "gallery.button": "Get Involved",
+    // Gallery Section
+    "gallery.title": "Our Gallery",
+    "gallery.subtitle": "Explore some of our successful projects and the skilled professionals behind them.",
     
     // Contact section
     "contact.title": "Get in Touch",
@@ -93,59 +98,39 @@ export const translations: Translations = {
     "role.contractor.feature3": "Manage payments and documentation",
     "role.contractor.feature4": "Track project progress and team performance",
     
-    // Login
-    "login.worker.title": "Welcome, Skilled Worker!",
-    "login.worker.subtitle": "Access your profile, track job applications, and connect with top contractors in your area.",
-    "login.professional.title": "Welcome, Professional Builder!",
-    "login.professional.subtitle": "Access your professional dashboard, manage your services, and connect with clients.",
-    "login.contractor.title": "Welcome, Contractor!",
-    "login.contractor.subtitle": "Access your business dashboard, manage projects, and find skilled workers for your construction needs.",
+    // Login page
+    "login.welcome": "Welcome Back!",
+    "login.rolePrompt": "Login as a",
+    "login.worker": "Worker",
+    "login.professional": "Professional",
+    "login.contractor": "Contractor",
+    "login.email": "Email",
+    "login.password": "Password",
+    "login.loginButton": "Login",
+    "login.registerPrompt": "Don't have an account?",
+    "login.registerLink": "Register",
     
     // Worker profile
-    "profile.title": "Profile Information",
-    "profile.edit": "Edit Profile",
-    "profile.save": "Save Profile",
-    "profile.name": "Full Name",
-    "profile.professionalTitle": "Professional Title",
-    "profile.email": "Email",
-    "profile.phone": "Phone",
-    "profile.location": "Location",
-    "profile.experience": "Years of Experience",
-    "profile.hourlyRate": "Hourly Rate ($)",
-    "profile.about": "About",
-    "profile.back": "Back to Dashboard",
-    "profile.cancel": "Cancel",
+    "workerProfile.title": "Worker Profile",
+    "workerProfile.name": "Name",
+    "workerProfile.email": "Email",
+    "workerProfile.phone": "Phone",
+    "workerProfile.skills": "Skills",
+    "workerProfile.experience": "Experience",
+    "workerProfile.availability": "Availability",
+    "workerProfile.updateProfile": "Update Profile",
     
     // Worker Dashboard
-    "worker.dashboard.title": "Worker Dashboard",
-    "worker.dashboard.welcome": "Welcome back",
-    "worker.dashboard.activeJobs": "Active Jobs",
-    "worker.dashboard.applications": "Applications",
-    "worker.dashboard.earnings": "Total Earnings",
-    "worker.dashboard.findJobs": "Find Jobs",
-    "worker.dashboard.skills": "My Skills",
-    "worker.dashboard.recentActivity": "Recent Activity",
-    "worker.dashboard.upcomingJobs": "Upcoming Jobs",
-    
-    // Active Work
-    "activeWork.title": "My Active Work",
-    "activeWork.ongoing": "Ongoing Projects",
-    "activeWork.upcoming": "Upcoming Projects",
-    "activeWork.completed": "Completed Projects",
-    "activeWork.noProjects": "No active projects found",
-    "activeWork.viewDetails": "View Details",
-    
-    // Job Info
-    "jobInfo.title": "Job Details",
-    "jobInfo.description": "Description",
-    "jobInfo.requirements": "Requirements",
-    "jobInfo.location": "Location",
-    "jobInfo.duration": "Duration",
-    "jobInfo.salary": "Salary",
-    "jobInfo.apply": "Apply Now",
-    "jobInfo.contact": "Contact Employer",
-    "jobInfo.posted": "Posted",
-    "jobInfo.deadline": "Application Deadline",
+    "workerDashboard.title": "Worker Dashboard",
+    "workerDashboard.welcome": "Welcome",
+    "workerDashboard.availableJobs": "Available Jobs",
+    "workerDashboard.searchJobs": "Search Jobs",
+    "workerDashboard.jobType": "Job Type",
+    "workerDashboard.location": "Location",
+    "workerDashboard.searchButton": "Search",
+    "workerDashboard.jobListings": "Job Listings",
+    "workerDashboard.noJobs": "No jobs found",
+    "workerDashboard.noJobsDesc": "There are currently no jobs available that match your criteria. Please check back later.",
     
     // Professional Dashboard
     "professional.myProjects": "My Projects",
@@ -166,140 +151,6 @@ export const translations: Translations = {
     "professional.workersHired": "Workers Hired",
     "professional.averageRating": "Average Rating",
     "professional.status": "Status",
-    
-    // Professional Profile
-    "professionalProfile.title": "Professional Profile",
-    "professionalProfile.subtitle": "Manage your professional details and portfolio",
-    "professionalProfile.details": "Personal Details",
-    "professionalProfile.portfolio": "Portfolio",
-    "professionalProfile.certifications": "Certifications",
-    "professionalProfile.reviews": "Client Reviews",
-    "professionalProfile.addProject": "Add Portfolio Project",
-    "professionalProfile.addCertification": "Add Certification",
-    
-    // Project Details
-    "projectDetails.title": "Project Details",
-    "projectDetails.description": "Project Description",
-    "projectDetails.requirements": "Requirements",
-    "projectDetails.timeline": "Project Timeline",
-    "projectDetails.budget": "Project Budget",
-    "projectDetails.location": "Location",
-    "projectDetails.apply": "Apply for this Project",
-    "projectDetails.contact": "Contact Client",
-    "projectDetails.share": "Share Project",
-    "projectDetails.similar": "Similar Projects",
-    
-    // Professional Messages
-    "messages.title": "Messages",
-    "messages.inbox": "Inbox",
-    "messages.sent": "Sent",
-    "messages.archived": "Archived",
-    "messages.compose": "Compose Message",
-    "messages.search": "Search messages...",
-    "messages.noMessages": "No messages found",
-    "messages.reply": "Reply",
-    "messages.delete": "Delete",
-    "messages.archive": "Archive",
-    
-    // Contractor Dashboard
-    "contractor.dashboard.title": "Contractor Dashboard",
-    "contractor.dashboard.welcome": "Welcome back",
-    "contractor.dashboard.activeProjects": "Active Projects",
-    "contractor.dashboard.workersPending": "Workers Pending Approval",
-    "contractor.dashboard.totalWorkers": "Total Workers Hired",
-    "contractor.dashboard.postJob": "Post New Job",
-    "contractor.dashboard.viewApplications": "View Applications",
-    "contractor.dashboard.projectProgress": "Project Progress",
-    
-    // Company Profile
-    "company.profile.title": "Company Profile",
-    "company.profile.about": "About Company",
-    "company.profile.projects": "Company Projects",
-    "company.profile.team": "Our Team",
-    "company.profile.contact": "Contact Information",
-    "company.profile.edit": "Edit Company Profile",
-    "company.profile.save": "Save Changes",
-    "company.profile.logo": "Company Logo",
-    
-    // Project View
-    "projectView.title": "Project Overview",
-    "projectView.client": "Client",
-    "projectView.status": "Status",
-    "projectView.dueDate": "Due Date",
-    "projectView.budget": "Budget",
-    "projectView.team": "Project Team",
-    "projectView.progress": "Progress",
-    "projectView.tasks": "Tasks",
-    "projectView.files": "Files & Documents",
-    "projectView.discussions": "Discussions",
-    
-    // Workers Management
-    "workers.title": "Manage Workers",
-    "workers.active": "Active Workers",
-    "workers.available": "Available Workers",
-    "workers.search": "Search workers...",
-    "workers.filter": "Filter by Skills",
-    "workers.sortRating": "Sort by Rating",
-    "workers.sortExperience": "Sort by Experience",
-    "workers.invite": "Invite to Project",
-    "workers.viewProfile": "View Profile",
-    "workers.contact": "Contact",
-    
-    // Analytics Page
-    "analytics.title": "Performance Analytics",
-    "analytics.overview": "Overview",
-    "analytics.projects": "Projects",
-    "analytics.workers": "Workers",
-    "analytics.earnings": "Earnings",
-    "analytics.trends": "Trends",
-    "analytics.timeframe": "Select Timeframe",
-    "analytics.export": "Export Data",
-    "analytics.projectCompletion": "Project Completion Rate",
-    "analytics.workerEfficiency": "Worker Efficiency",
-    "analytics.clientSatisfaction": "Client Satisfaction",
-    
-    // Post Project Form
-    "project.postNew": "Post a New Project",
-    "project.fillDetails": "Fill in the details below to create your project",
-    "project.basicInfo": "Basic Information",
-    "project.jobTitle": "Project Title",
-    "project.location": "Location",
-    "project.employmentType": "Employment Type",
-    "project.selectType": "Select Employment Type",
-    "project.fullTime": "Full-time",
-    "project.partTime": "Part-time",
-    "project.contract": "Contract",
-    "project.temporary": "Temporary",
-    "project.hourlyRate": "Hourly Rate (USD)",
-    "project.jobType": "Project Type",
-    "project.commercial": "Commercial",
-    "project.residential": "Residential",
-    "project.industrial": "Industrial",
-    "project.infrastructure": "Infrastructure",
-    "project.timeline": "Timeline",
-    "project.1month": "1 month",
-    "project.3months": "3 months",
-    "project.6months": "6 months",
-    "project.1year": "1 year",
-    "project.2years": "2+ years",
-    "project.removeAfter": "Remove Project After",
-    "project.7days": "7 days",
-    "project.14days": "14 days",
-    "project.30days": "30 days",
-    "project.60days": "60 days",
-    "project.90days": "90 days",
-    "project.dontRemove": "Don't automatically remove",
-    "project.jobDetails": "Project Details",
-    "project.description": "Project Description",
-    "project.descriptionPlaceholder": "Describe the project responsibilities and expectations...",
-    "project.requirements": "Requirements",
-    "project.requirementsPlaceholder": "List required skills, experience, certifications, etc...",
-    "project.images": "Project Images",
-    "project.uploadImages": "Click to upload images",
-    "project.dragDrop": "or drag and drop",
-    "project.selectFiles": "Select Files",
-    "project.saveAsDraft": "Save as Draft",
-    "project.post": "Post Project"
   },
   
   hi: {
@@ -320,276 +171,128 @@ export const translations: Translations = {
     
     // Footer
     "footer.labourHub": "लेबर हब",
-    "footer.rights": "सर्वाधिकार सुरक्षित 2024",
+    "footer.rights": "सर्वाधिकार सुरक्षित",
     "footer.labourNet": "लेबरनेट",
-    "footer.aboutUs": "हमारे बारे में",
+    "footer.aboutUs": "हमारी कहानी",
     "footer.ourWork": "हमारा काम",
     "footer.linkedin": "लिंक्डइन",
     "footer.contactUs": "संपर्क करें",
-    "footer.copyright": "2024 लेबरनेट. सर्वाधिकार सुरक्षित।",
+    "footer.copyright": "लेबरनेट. सर्वाधिकार सुरक्षित।",
     "footer.privacy": "गोपनीयता नीति",
     "footer.terms": "सेवा की शर्तें",
     "footer.cookies": "कुकीज़ सेटिंग्स",
+    "footer.quickLinks": "त्वरित लिंक",
+    "footer.services": "हमारी सेवाएं",
+    "footer.projectManagement": "परियोजना प्रबंधन",
+    "footer.ourServices": "हमारी सेवाएं",
     
     // Hero section
-    "hero.title": "निर्माताओं को सशक्त बनाना",
-    "hero.subtitle": "कुशल पेशेवरों और ठेकेदारों के समुदाय से जुड़ें।",
+    "hero.title": "निर्माण को सशक्त बनाना, भविष्य का निर्माण",
+    "hero.subtitle": "एक स्मार्ट, डिजिटल प्लेटफॉर्म के माध्यम से बिल्डरों, ठेकेदारों और श्रमिकों को जोड़ना।",
     "hero.button": "अपनी यात्रा शुरू करें",
     
-    // Achievement section
-    "achievements.title": "हमारी उपलब्धियों का अन्वेषण करें",
-    "achievements.subtitle": "देखें कि हम निर्माताओं और ठेकेदारों का समर्थन कैसे करते हैं।",
+    // Achievement Section
+    "achievement.title": "हमारी उपलब्धियाँ",
+    "achievement.projectsCompleted": "परियोजनाएँ पूरी हुईं",
+    "achievement.workersEmployed": "कर्मचारी कार्यरत",
+    "achievement.contractorsConnected": "ठेकेदार जुड़े",
+    "achievement.countriesActive": "देश सक्रिय",
     
-    // Gallery section
-    "gallery.title": "निर्माता क्रांति में शामिल हों",
-    "gallery.subtitle": "हम आपको सफल होने के लिए आवश्यक उपकरण और संपर्क प्रदान करते हैं।",
-    "gallery.button": "शामिल हों",
+    // Gallery Section
+    "gallery.title": "हमारी गैलरी",
+    "gallery.subtitle": "हमारी कुछ सफल परियोजनाओं और उनके पीछे कुशल पेशेवरों का अन्वेषण करें।",
     
     // Contact section
     "contact.title": "संपर्क करें",
     "contact.subtitle": "क्या आपके कोई प्रश्न हैं या हमारी सेवाओं के बारे में अधिक जानना चाहते हैं? सीधे हमसे संपर्क करें या फॉर्म भरें।",
     "contact.info": "संपर्क जानकारी",
     "contact.email": "ईमेल:",
-    "contact.phone": "फोन:",
+    "contact.phone": "फ़ोन:",
     "contact.address": "पता:",
     
     // Journey page
     "journey.title": "लेबरनेट के साथ अपनी यात्रा शुरू करें",
-    "journey.subtitle": "वह भूमिका चुनें जो आपकी आवश्यकताओं के लिए सबसे उपयुक्त है और अपने निर्माण करियर की यात्रा आज ही शुरू करें",
-    "journey.readyText": "अगला कदम उठाने के लिए तैयार हैं? अपना प्रोफाइल बनाएं और अवसरों का अन्वेषण करें।",
-    "journey.createProfile": "अपना प्रोफाइल बनाएं",
+    "journey.subtitle": "वह भूमिका चुनें जो आपकी आवश्यकताओं के लिए सबसे उपयुक्त हो और आज ही अपना निर्माण करियर शुरू करें",
+    "journey.readyText": "अगला कदम उठाने के लिए तैयार हैं? अपनी प्रोफ़ाइल बनाएं और अवसरों की खोज शुरू करें।",
+    "journey.createProfile": "अपनी प्रोफ़ाइल बनाएं",
     
     // Worker role
     "role.worker.title": "निर्माण श्रमिक",
-    "role.worker.description": "हमारे कुशल निर्माण श्रमिकों के नेटवर्क से जुड़ें और विभिन्न परियोजनाओं में नियमित रोजगार के अवसर प्राप्त करें।",
+    "role.worker.description": "कुशल निर्माण श्रमिकों के हमारे नेटवर्क में शामिल हों और विभिन्न परियोजनाओं में नियमित रोजगार के अवसर खोजें।",
     "role.worker.feature1": "दैनिक और साप्ताहिक नौकरी के अवसरों तक पहुंच",
-    "role.worker.feature2": "प्रतिस्पर्धी वेतन दर",
+    "role.worker.feature2": "प्रतिस्पर्धी वेतन दरें",
     "role.worker.feature3": "कौशल विकास और प्रशिक्षण",
     "role.worker.feature4": "सुरक्षा उपकरण और दिशानिर्देश",
     
     // Professional role
-    "role.professional.title": "पेशेवर निर्माता",
-    "role.professional.description": "इलेक्ट्रिकल, प्लंबिंग, कारपेंट्री और अन्य विशेष ट्रेडों में लाइसेंस प्राप्त पेशेवरों के लिए। क्लाइंट्स और प्रोजेक्ट्स से सीधे जुड़ें।",
-    "role.professional.feature1": "अपने प्रमाणपत्र और पोर्टफोलियो का प्रदर्शन करें",
+    "role.professional.title": "पेशेवर बिल्डर",
+    "role.professional.description": "विद्युत, प्लंबिंग, बढ़ईगीरी और अन्य विशिष्ट व्यवसायों में लाइसेंस प्राप्त पेशेवरों के लिए। सीधे ग्राहकों और परियोजनाओं से जुड़ें।",
+    "role.professional.feature1": "अपने प्रमाणपत्र और पोर्टफोलियो दिखाएं",
     "role.professional.feature2": "ठेकेदारों और ग्राहकों से जुड़ें",
-    "role.professional.feature3": "अपनी उपलब्धता और बुकिंग का प्रबंधन करें",
-    "role.professional.feature4": "हमारे प्लेटफॉर्म के माध्यम से सुरक्षित भुगतान प्राप्त करें",
+    "role.professional.feature3": "अपनी उपलब्धता और बुकिंग प्रबंधित करें",
+    "role.professional.feature4": "हमारे मंच के माध्यम से सुरक्षित रूप से भुगतान प्राप्त करें",
     
     // Contractor role
     "role.contractor.title": "ठेकेदार",
-    "role.contractor.description": "अपनी परियोजना प्रबंधन को सुव्यवस्थित करें और प्रत्येक कार्य के लिए सही श्रमिकों को ढूंढें। अपने निर्माण परियोजनाओं के लिए विश्वसनीय टीमें बनाएं।",
-    "role.contractor.feature1": "नौकरियां पोस्ट करें और जल्दी से योग्य श्रमिकों को ढूंढें",
-    "role.contractor.feature2": "श्रमिकों की योग्यता और अनुभव सत्यापित करें",
-    "role.contractor.feature3": "भुगतान और दस्तावेज़ीकरण का प्रबंधन करें",
-    "role.contractor.feature4": "परियोजना प्रगति और टीम प्रदर्शन का ट्रैक रखें",
+    "role.contractor.description": "अपनी परियोजना प्रबंधन को सुव्यवस्थित करें और प्रत्येक नौकरी के लिए सही कर्मचारी खोजें। अपने निर्माण परियोजनाओं के लिए विश्वसनीय टीम बनाएं।",
+    "role.contractor.feature1": "नौकरी पोस्ट करें और जल्दी से योग्य कर्मचारी खोजें",
+    "role.contractor.feature2": "कर्मचारी योग्यता और अनुभव सत्यापित करें",
+    "role.contractor.feature3": "भुगतान और दस्तावेज़ीकरण प्रबंधित करें",
+    "role.contractor.feature4": "परियोजना की प्रगति और टीम के प्रदर्शन को ट्रैक करें",
     
-    // Login
-    "login.worker.title": "स्वागत है, कुशल श्रमिक!",
-    "login.worker.subtitle": "अपने प्रोफ़ाइल तक पहुंचें, नौकरी आवेदनों को ट्रैक करें, और अपने क्षेत्र के शीर्ष ठेकेदारों से जुड़ें।",
-    "login.professional.title": "स्वागत है, पेशेवर निर्माता!",
-    "login.professional.subtitle": "अपने पेशेवर डैशबोर्ड तक पहुंचें, अपनी सेवाओं का प्रबंधन करें, और ग्राहकों से जुड़ें।",
-    "login.contractor.title": "स्वागत है, ठेकेदार!",
-    "login.contractor.subtitle": "अपने व्यापार डैशबोर्ड तक पहुंचें, परियोजनाओं का प्रबंधन करें, और अपनी निर्माण आवश्यकताओं के लिए कुशल श्रमिकों को ढूंढें।",
+    // Login page
+    "login.welcome": "वापस स्वागत है!",
+    "login.rolePrompt": "के रूप में लॉग इन करें",
+    "login.worker": "कर्मचारी",
+    "login.professional": "पेशेवर",
+    "login.contractor": "ठेकेदार",
+    "login.email": "ईमेल",
+    "login.password": "पासवर्ड",
+    "login.loginButton": "लॉग इन",
+    "login.registerPrompt": "खाता नहीं है?",
+    "login.registerLink": "पंजीकरण",
+    
+    // Worker profile
+    "workerProfile.title": "कर्मचारी प्रोफ़ाइल",
+    "workerProfile.name": "नाम",
+    "workerProfile.email": "ईमेल",
+    "workerProfile.phone": "फ़ोन",
+    "workerProfile.skills": "कौशल",
+    "workerProfile.experience": "अनुभव",
+    "workerProfile.availability": "उपलब्धता",
+    "workerProfile.updateProfile": "प्रोफ़ाइल अपडेट करें",
+    
+    // Worker Dashboard
+    "workerDashboard.title": "कर्मचारी डैशबोर्ड",
+    "workerDashboard.welcome": "स्वागत",
+    "workerDashboard.availableJobs": "उपलब्ध नौकरियाँ",
+    "workerDashboard.searchJobs": "नौकरियाँ खोजें",
+    "workerDashboard.jobType": "नौकरी का प्रकार",
+    "workerDashboard.location": "स्थान",
+    "workerDashboard.searchButton": "खोज",
+    "workerDashboard.jobListings": "नौकरी लिस्टिंग",
+    "workerDashboard.noJobs": "कोई नौकरी नहीं मिली",
+    "workerDashboard.noJobsDesc": "वर्तमान में कोई भी नौकरी उपलब्ध नहीं है जो आपके मानदंडों से मेल खाती हो। कृपया बाद में पुनः जाँच करें।",
     
     // Professional Dashboard
     "professional.myProjects": "मेरी परियोजनाएँ",
     "professional.manage": "अपनी पोस्ट की गई निर्माण परियोजनाओं का प्रबंधन करें",
     "professional.search": "अपनी परियोजनाओं को खोजें...",
     "professional.allCategories": "सभी श्रेणियाँ",
-    "professional.searchButton": "खोजें",
+    "professional.searchButton": "खोज",
     "professional.allProjects": "सभी परियोजनाएँ",
     "professional.active": "सक्रिय",
     "professional.completed": "पूर्ण",
-    "professional.noProjects": "अभी तक कोई परियोजना नहीं",
+    "professional.noProjects": "अभी तक कोई परियोजना नहीं है",
     "professional.noProjectsDesc": "आपने अभी तक कोई परियोजना पोस्ट नहीं की है। आरंभ करने के लिए अपनी पहली परियोजना बनाएं!",
     "professional.postFirst": "अपनी पहली परियोजना पोस्ट करें",
     "professional.postProject": "अपनी परियोजना पोस्ट करें",
-    "professional.fillForm": "नई परियोजना बनाने के लिए नीचे दिया फॉर्म भरें।",
+    "professional.fillForm": "एक नई परियोजना बनाने के लिए नीचे दिया गया फॉर्म भरें।",
     "professional.activeProjects": "सक्रिय परियोजनाएँ",
     "professional.applicationsReceived": "प्राप्त आवेदन",
-    "professional.workersHired": "नियुक्त किए गए कर्मचारी",
+    "professional.workersHired": "कर्मचारी किराए पर लिए गए",
     "professional.averageRating": "औसत रेटिंग",
     "professional.status": "स्थिति",
-    
-    // Worker profile
-    "profile.title": "प्रोफ़ाइल जानकारी",
-    "profile.edit": "प्रोफ़ाइल संपादित करें",
-    "profile.save": "प्रोफ़ाइल सहेजें",
-    "profile.name": "पूरा नाम",
-    "profile.professionalTitle": "पेशेवर शीर्षक",
-    "profile.email": "ईमेल",
-    "profile.phone": "फ़ोन",
-    "profile.location": "स्थान",
-    "profile.experience": "अनुभव के वर्ष",
-    "profile.hourlyRate": "प्रति घंटा दर ($)",
-    "profile.about": "के बारे में",
-    "profile.back": "डैशबोर्ड पर वापस जाएँ",
-    "profile.cancel": "रद्द करें",
-
-    // Worker Dashboard translations
-    "worker.dashboard.title": "कर्मचारी डैशबोर्ड",
-    "worker.dashboard.welcome": "वापस स्वागत है",
-    "worker.dashboard.activeJobs": "सक्रिय नौकरियाँ",
-    "worker.dashboard.applications": "आवेदन",
-    "worker.dashboard.earnings": "कुल कमाई",
-    "worker.dashboard.findJobs": "नौकरियाँ खोजें",
-    "worker.dashboard.skills": "मेरे कौशल",
-    "worker.dashboard.recentActivity": "हाल की गतिविधि",
-    "worker.dashboard.upcomingJobs": "आगामी नौकरियाँ",
-
-    // Active Work translations
-    "activeWork.title": "मेरा सक्रिय कार्य",
-    "activeWork.ongoing": "चल रही परियोजनाएँ",
-    "activeWork.upcoming": "आगामी परियोजनाएँ",
-    "activeWork.completed": "पूर्ण परियोजनाएँ",
-    "activeWork.noProjects": "कोई सक्रिय परियोजना नहीं मिली",
-    "activeWork.viewDetails": "विवरण देखें",
-
-    // Job Info translations
-    "jobInfo.title": "नौकरी विवरण",
-    "jobInfo.description": "विवरण",
-    "jobInfo.requirements": "आवश्यकताएँ",
-    "jobInfo.location": "स्थान",
-    "jobInfo.duration": "अवधि",
-    "jobInfo.salary": "वेतन",
-    "jobInfo.apply": "अभी आवेदन करें",
-    "jobInfo.contact": "नियोक्ता से संपर्क करें",
-    "jobInfo.posted": "पोस्ट किया गया",
-    "jobInfo.deadline": "आवेदन की अंतिम तिथि",
-
-    // Professional Profile translations
-    "professionalProfile.title": "पेशेवर प्रोफ़ाइल",
-    "professionalProfile.subtitle": "अपने पेशेवर विवरण और पोर्टफोलियो का प्रबंधन करें",
-    "professionalProfile.details": "व्यक्तिगत विवरण",
-    "professionalProfile.portfolio": "पोर्टफोलियो",
-    "professionalProfile.certifications": "प्रमाणपत्र",
-    "professionalProfile.reviews": "ग्राहक समीक्षाएँ",
-    "professionalProfile.addProject": "पोर्टफोलियो परियोजना जोड़ें",
-    "professionalProfile.addCertification": "प्रमाणपत्र जोड़ें",
-
-    // Project Details translations
-    "projectDetails.title": "परियोजना विवरण",
-    "projectDetails.description": "परियोजना विवरण",
-    "projectDetails.requirements": "आवश्यकताएँ",
-    "projectDetails.timeline": "परियोजना समयरेखा",
-    "projectDetails.budget": "परियोजना बजट",
-    "projectDetails.location": "स्थान",
-    "projectDetails.apply": "इस परियोजना के लिए आवेदन करें",
-    "projectDetails.contact": "ग्राहक से संपर्क करें",
-    "projectDetails.share": "परियोजना साझा करें",
-    "projectDetails.similar": "समान परियोजनाएँ",
-
-    // Professional Messages translations
-    "messages.title": "संदेश",
-    "messages.inbox": "इनबॉक्स",
-    "messages.sent": "भेजा गया",
-    "messages.archived": "संग्रहीत",
-    "messages.compose": "संदेश लिखें",
-    "messages.search": "संदेश खोजें...",
-    "messages.noMessages": "कोई संदेश नहीं मिला",
-    "messages.reply": "उत्तर",
-    "messages.delete": "हटाएँ",
-    "messages.archive": "संग्रह करें",
-
-    // Contractor Dashboard translations
-    "contractor.dashboard.title": "ठेकेदार डैशबोर्ड",
-    "contractor.dashboard.welcome": "वापस स्वागत है",
-    "contractor.dashboard.activeProjects": "सक्रिय परियोजनाएँ",
-    "contractor.dashboard.workersPending": "कर्मचारी अनुमोदन लंबित",
-    "contractor.dashboard.totalWorkers": "कुल नियुक्त कर्मचारी",
-    "contractor.dashboard.postJob": "नई नौकरी पोस्ट करें",
-    "contractor.dashboard.viewApplications": "आवेदन देखें",
-    "contractor.dashboard.projectProgress": "परियोजना प्रगति",
-
-    // Company Profile translations
-    "company.profile.title": "कंपनी प्रोफ़ाइल",
-    "company.profile.about": "कंपनी के बारे में",
-    "company.profile.projects": "कंपनी परियोजनाएँ",
-    "company.profile.team": "हमारी टीम",
-    "company.profile.contact": "संपर्क जानकारी",
-    "company.profile.edit": "कंपनी प्रोफ़ाइल संपादित करें",
-    "company.profile.save": "परिवर्तन सहेजें",
-    "company.profile.logo": "कंपनी लोगो",
-
-    // Project View translations
-    "projectView.title": "परियोजना अवलोकन",
-    "projectView.client": "ग्राहक",
-    "projectView.status": "स्थिति",
-    "projectView.dueDate": "नियत तारीख",
-    "projectView.budget": "बजट",
-    "projectView.team": "परियोजना टीम",
-    "projectView.progress": "प्रगति",
-    "projectView.tasks": "कार्य",
-    "projectView.files": "फ़ाइलें और दस्तावेज़",
-    "projectView.discussions": "चर्चाएँ",
-
-    // Workers Management translations
-    "workers.title": "कर्मचारी प्रबंधित करें",
-    "workers.active": "सक्रिय कर्मचारी",
-    "workers.available": "उपलब्ध कर्मचारी",
-    "workers.search": "कर्मचारी खोजें...",
-    "workers.filter": "कौशल द्वारा फ़िल्टर करें",
-    "workers.sortRating": "रेटिंग द्वारा सॉर्ट करें",
-    "workers.sortExperience": "अनुभव द्वारा सॉर्ट करें",
-    "workers.invite": "परियोजना में आमंत्रित करें",
-    "workers.viewProfile": "प्रोफ़ाइल देखें",
-    "workers.contact": "संपर्क करें",
-
-    // Analytics Page translations
-    "analytics.title": "प्रदर्शन विश्लेषण",
-    "analytics.overview": "अवलोकन",
-    "analytics.projects": "परियोजनाएँ",
-    "analytics.workers": "कर्मचारी",
-    "analytics.earnings": "कमाई",
-    "analytics.trends": "प्रवृत्तियाँ",
-    "analytics.timeframe": "समय सीमा चुनें",
-    "analytics.export": "डेटा निर्यात करें",
-    "analytics.projectCompletion": "परियोजना पूर्णता दर",
-    "analytics.workerEfficiency": "कर्मचारी दक्षता",
-    "analytics.clientSatisfaction": "ग्राहक संतुष्टि",
-
-    // Post Project Form translations
-    "project.postNew": "एक नई परियोजना पोस्ट करें",
-    "project.fillDetails": "अपनी परियोजना बनाने के लिए नीचे दिए गए विवरण भरें",
-    "project.basicInfo": "बुनियादी जानकारी",
-    "project.jobTitle": "परियोजना शीर्षक",
-    "project.location": "स्थान",
-    "project.employmentType": "रोजगार का प्रकार",
-    "project.selectType": "रोजगार का प्रकार चुनें",
-    "project.fullTime": "पूर्णकालिक",
-    "project.partTime": "अंशकालिक",
-    "project.contract": "अनुबंध",
-    "project.temporary": "अस्थायी",
-    "project.hourlyRate": "प्रति घंटा दर (USD)",
-    "project.jobType": "परियोजना का प्रकार",
-    "project.commercial": "व्यावसायिक",
-    "project.residential": "आवासीय",
-    "project.industrial": "औद्योगिक",
-    "project.infrastructure": "बुनियादी ढाँचा",
-    "project.timeline": "समयरेखा",
-    "project.1month": "1 महीना",
-    "project.3months": "3 महीने",
-    "project.6months": "6 महीने",
-    "project.1year": "1 वर्ष",
-    "project.2years": "2+ वर्ष",
-    "project.removeAfter": "इसके बाद परियोजना हटाएं",
-    "project.7days": "7 दिन",
-    "project.14days": "14 दिन",
-    "project.30days": "30 दिन",
-    "project.60days": "60 दिन",
-    "project.90days": "90 दिन",
-    "project.dontRemove": "स्वचालित रूप से न हटाएं",
-    "project.jobDetails": "परियोजना विवरण",
-    "project.description": "परियोजना विवरण",
-    "project.descriptionPlaceholder": "परियोजना जिम्मेदारियों और अपेक्षाओं का वर्णन करें...",
-    "project.requirements": "आवश्यकताएँ",
-    "project.requirementsPlaceholder": "आवश्यक कौशल, अनुभव, प्रमाणपत्र आदि सूचीबद्ध करें...",
-    "project.images": "परियोजना छवियाँ",
-    "project.uploadImages": "छवियाँ अपलोड करने के लिए क्लिक करें",
-    "project.dragDrop": "या खींचें और छोड़ें",
-    "project.selectFiles": "फ़ाइलें चुनें",
-    "project.saveAsDraft": "ड्राफ्ट के रूप में सहेजें",
-    "project.post": "परियोजना पोस्ट करें"
   },
   
   mr: {
@@ -597,7 +300,7 @@ export const translations: Translations = {
     "header.dashboard": "डॅशबोर्ड",
     "header.story": "आमची कथा",
     "header.marketplace": "बाजारपेठ",
-    "header.getInTouch": "संपर्क करा",
+    "header.getInTouch": "संपर्क साधा",
     
     // Navigation
     "nav.dashboard": "डॅशबोर्ड",
@@ -610,43 +313,49 @@ export const translations: Translations = {
     
     // Footer
     "footer.labourHub": "लेबर हब",
-    "footer.rights": "सर्व अधिकार राखीव 2024",
+    "footer.rights": "सर्व अधिकार राखीव",
     "footer.labourNet": "लेबरनेट",
     "footer.aboutUs": "आमच्याबद्दल",
     "footer.ourWork": "आमचे कार्य",
     "footer.linkedin": "लिंक्डइन",
     "footer.contactUs": "संपर्क साधा",
-    "footer.copyright": "2024 लेबरनेट. सर्व अधिकार राखीव.",
+    "footer.copyright": "लेबरनेट. सर्व अधिकार राखीव.",
     "footer.privacy": "गोपनीयता धोरण",
     "footer.terms": "सेवेचे नियम",
     "footer.cookies": "कुकीज सेटिंग्ज",
+    "footer.quickLinks": "त्वरित दुवे",
+    "footer.services": "आमच्या सेवा",
+    "footer.projectManagement": "प्रकल्प व्यवस्थापन",
+    "footer.ourServices": "आमच्या सेवा",
     
     // Hero section
-    "hero.title": "बांधकाम व्यावसायिकांना सक्षम करणे",
-    "hero.subtitle": "कुशल व्यावसायिक आणि कंत्राटदारांच्या समुदायात सामील व्हा.",
-    "hero.button": "आपल्या प्रवासाला सुरुवात करा",
+    "hero.title": "बांधकाम सक्षम करणे, भविष्य निर्माण करणे",
+    "hero.subtitle": "स्मार्ट, डिजिटल प्लॅटफॉर्मद्वारे बांधकाम व्यावसायिक, कंत्राटदार आणि कामगारांना जोडणे.",
+    "hero.button": "आपला प्रवास सुरू करा",
     
-    // Achievement section
-    "achievements.title": "आमच्या उपलब्धी शोधा",
-    "achievements.subtitle": "आम्ही बांधकाम व्यावसायिक आणि कंत्राटदारांना कसा पाठिंबा देतो ते पहा.",
+    // Achievement Section
+    "achievement.title": "आमची उद्दिष्ट्ये",
+    "achievement.projectsCompleted": "पूर्ण झालेले प्रकल्प",
+    "achievement.workersEmployed": "नोकरी केलेले कामगार",
+    "achievement.contractorsConnected": "जोडलेले कंत्राटदार",
+    "achievement.countriesActive": "सक्रिय देश",
     
-    // Gallery section
-    "gallery.title": "बांधकाम क्रांतीमध्ये सामील व्हा",
-    "gallery.subtitle": "आम्ही आपल्याला आवश्यक साधने आणि कनेक्शन प्रदान करतो.",
-    "gallery.button": "सहभागी व्हा",
+    // Gallery Section
+    "gallery.title": "आमची गॅलरी",
+    "gallery.subtitle": "आमच्या काही यशस्वी प्रकल्पांचे आणि त्यांच्यामागील कुशल व्यावसायिकांचे अन्वेषण करा.",
     
     // Contact section
     "contact.title": "संपर्क साधा",
-    "contact.subtitle": "प्रश्न आहेत किंवा आमच्या सेवांबद्दल अधिक जाणून घ्यायचे आहे? थेट आमच्याशी संपर्क साधा किंवा फॉर्म भरा.",
+    "contact.subtitle": "आपल्याला प्रश्न असल्यास किंवा आमच्या सेवांबद्दल अधिक जाणून घ्यायचे असल्यास? आमच्याशी थेट संपर्क साधा किंवा फॉर्म भरा.",
     "contact.info": "संपर्क माहिती",
     "contact.email": "ईमेल:",
     "contact.phone": "फोन:",
     "contact.address": "पत्ता:",
     
     // Journey page
-    "journey.title": "लेबरनेट सोबत आपल्या प्रवासाला सुरुवात करा",
-    "journey.subtitle": "आपल्या गरजेनुसार योग्य भूमिका निवडा आणि आजच आपल्या बांधकाम कारकिर्दीच्या प्रवासाला सुरुवात करा",
-    "journey.readyText": "पुढील पाऊल उचलण्यास तयार आहात? आपली प्रोफाइल तयार करा आणि संधी शोधा.",
+    "journey.title": "लेबरनेट सह आपला प्रवास सुरू करा",
+    "journey.subtitle": "आपल्या गरजेनुसार सर्वोत्तम भूमिका निवडा आणि आजच आपल्या बांधकाम कारकीर्दीचा प्रवास सुरू करा",
+    "journey.readyText": "पुढील पाऊल उचलण्यास तयार आहात? आपली प्रोफाइल तयार करा आणि संधी शोधणे सुरू करा.",
     "journey.createProfile": "आपली प्रोफाइल तयार करा",
     
     // Worker role
@@ -659,9 +368,9 @@ export const translations: Translations = {
     
     // Professional role
     "role.professional.title": "व्यावसायिक बांधकाम व्यावसायिक",
-    "role.professional.description": "इलेक्ट्रिकल, प्लंबिंग, सुतारकाम आणि इतर विशेष व्यवसायांमधील परवानाधारक व्यावसायिकांसाठी. क्लायंट आणि प्रोजेक्टशी थेट कनेक्ट व्हा.",
-    "role.professional.feature1": "आपले प्रमाणपत्र आणि पोर्टफोलिओ प्रदर्शित करा",
-    "role.professional.feature2": "कंत्राटदार आणि क्लायंटशी कनेक्ट व्हा",
+    "role.professional.description": "इलेक्ट्रिकल, प्लंबिंग, सुतारकाम आणि इतर विशिष्ट व्यवसायांमधील परवानाधारक व्यावसायिकांसाठी. थेट ग्राहक आणि प्रकल्पांशी संपर्क साधा.",
+    "role.professional.feature1": "आपले प्रमाणपत्र आणि पोर्टफोलिओ दर्शवा",
+    "role.professional.feature2": "कंत्राटदार आणि ग्राहकांशी संपर्क साधा",
     "role.professional.feature3": "आपली उपलब्धता आणि बुकिंग व्यवस्थापित करा",
     "role.professional.feature4": "आमच्या प्लॅटफॉर्मद्वारे सुरक्षितपणे पैसे मिळवा",
     
@@ -669,120 +378,233 @@ export const translations: Translations = {
     "role.contractor.title": "कंत्राटदार",
     "role.contractor.description": "आपले प्रकल्प व्यवस्थापन सुव्यवस्थित करा आणि प्रत्येक कामासाठी योग्य कामगार शोधा. आपल्या बांधकाम प्रकल्पांसाठी विश्वसनीय टीम तयार करा.",
     "role.contractor.feature1": "नोकरी पोस्ट करा आणि त्वरित पात्र कामगार शोधा",
-    "role.contractor.feature2": "कामगारांची योग्यता आणि अनुभव सत्यापित करा",
-    "role.contractor.feature3": "देयके आणि कागदपत्रे व्यवस्थापित करा",
+    "role.contractor.feature2": "कामगार पात्रता आणि अनुभव सत्यापित करा",
+    "role.contractor.feature3": "देयके आणि दस्तऐवजीकरण व्यवस्थापित करा",
     "role.contractor.feature4": "प्रकल्प प्रगती आणि टीम कामगिरी ट्रॅक करा",
     
-    // Login
-    "login.worker.title": "स्वागत आहे, कुशल कामगार!",
-    "login.worker.subtitle": "आपल्या प्रोफाइल मध्ये प्रवेश करा, नोकरी अर्ज ट्रॅक करा, आणि आपल्या क्षेत्रातील शीर्ष कंत्राटदारांशी जोडणी करा.",
-    "login.professional.title": "स्वागत आहे, व्यावसायिक बांधकामदार!",
-    "login.professional.subtitle": "आपल्या व्यावसायिक डॅशबोर्डमध्ये प्रवेश करा, आपल्या सेवा व्यवस्थापित करा, आणि क्लायंटशी जोडणी करा.",
-    "login.contractor.title": "स्वागत आहे, कंत्राटदार!",
-    "login.contractor.subtitle": "आपल्या व्यवसाय डॅशबोर्डमध्ये प्रवेश करा, प्रकल्प व्यवस्थापित करा, आणि आपल्या बांधकाम गरजांसाठी कुशल कामगार शोधा.",
+    // Login page
+    "login.welcome": "पुन्हा स्वागत आहे!",
+    "login.rolePrompt": "म्हणून लॉग इन करा",
+    "login.worker": "कामगार",
+    "login.professional": "व्यावसायिक",
+    "login.contractor": "कंत्राटदार",
+    "login.email": "ईमेल",
+    "login.password": "पासवर्ड",
+    "login.loginButton": "लॉग इन",
+    "login.registerPrompt": "खाते नाही?",
+    "login.registerLink": "नोंदणी करा",
     
     // Worker profile
-    "profile.title": "प्रोफाइल माहिती",
-    "profile.edit": "प्रोफाइल संपादित करा",
-    "profile.save": "प्रोफाइल जतन करा",
-    "profile.name": "पूर्ण नाव",
-    "profile.professionalTitle": "व्यावसायिक शीर्षक",
-    "profile.email": "ईमेल",
-    "profile.phone": "फोन",
-    "profile.location": "स्थान",
-    "profile.experience": "अनुभवाची वर्षे",
-    "profile.hourlyRate": "तासाचा दर ($)",
-    "profile.about": "माझ्याबद्दल",
-    "profile.back": "डॅशबोर्डवर परत जा",
-    "profile.cancel": "रद्द करा",
-
-    // Worker Dashboard translations
-    "worker.dashboard.title": "कामगार डॅशबोर्ड",
-    "worker.dashboard.welcome": "पुन्हा स्वागत आहे",
-    "worker.dashboard.activeJobs": "सक्रिय नोकऱ्या",
-    "worker.dashboard.applications": "अर्ज",
-    "worker.dashboard.earnings": "एकूण कमाई",
-    "worker.dashboard.findJobs": "नोकऱ्या शोधा",
-    "worker.dashboard.skills": "माझे कौशल्ये",
-    "worker.dashboard.recentActivity": "अलीकडील क्रियाकलाप",
-    "worker.dashboard.upcomingJobs": "आगामी नोकऱ्या",
-
-    // Active Work translations
-    "activeWork.title": "माझे सक्रिय काम",
-    "activeWork.ongoing": "सुरू असलेले प्रकल्प",
-    "activeWork.upcoming": "आगामी प्रकल्प",
-    "activeWork.completed": "पूर्ण केलेले प्रकल्प",
-    "activeWork.noProjects": "कोणतेही सक्रिय प्रकल्प आढळले नाहीत",
-    "activeWork.viewDetails": "तपशील पहा",
-
-    // Job Info translations
-    "jobInfo.title": "नोकरी तपशील",
-    "jobInfo.description": "वर्णन",
-    "jobInfo.requirements": "आवश्यकता",
-    "jobInfo.location": "स्थान",
-    "jobInfo.duration": "कालावधी",
-    "jobInfo.salary": "वेतन",
-    "jobInfo.apply": "आता अर्ज करा",
-    "jobInfo.contact": "नियोक्त्याशी संपर्क साधा",
-    "jobInfo.posted": "पोस्ट केले",
-    "jobInfo.deadline": "अर्जाची अंतिम तारीख",
-
-    // Professional Profile translations
-    "professionalProfile.title": "व्यावसायिक प्रोफाइल",
-    "professionalProfile.subtitle": "आपले व्यावसायिक तपशील आणि पोर्टफोलिओ व्यवस्थापित करा",
-    "professionalProfile.details": "वैयक्तिक तपशील",
-    "professionalProfile.portfolio": "पोर्टफोलिओ",
-    "professionalProfile.certifications": "प्रमाणपत्रे",
-    "professionalProfile.reviews": "क्लायंट पुनरावलोकने",
-    "professionalProfile.addProject": "पोर्टफोलिओ प्रकल्प जोडा",
-    "professionalProfile.addCertification": "प्रमाणपत्र जोडा",
-
-    // Project Details translations
-    "projectDetails.title": "प्रकल्प तपशील",
-    "projectDetails.description": "प्रकल्प वर्णन",
-    "projectDetails.requirements": "आवश्यकता",
-    "projectDetails.timeline": "प्रकल्प कालरेखा",
-    "projectDetails.budget": "प्रकल्प बजेट",
-    "projectDetails.location": "स्थान",
-    "projectDetails.apply": "या प्रकल्पासाठी अर्ज करा",
-    "projectDetails.contact": "क्लायंटशी संपर्क साधा",
-    "projectDetails.share": "प्रकल्प सामायिक करा",
-    "projectDetails.similar": "समान प्रकल्प",
-
-    // Professional Messages translations
-    "messages.title": "संदेश",
-    "messages.inbox": "इनबॉक्स",
-    "messages.sent": "पाठवलेले",
-    "messages.archived": "संग्रहित",
-    "messages.compose": "संदेश लिहा",
-    "messages.search": "संदेश शोधा...",
-    "messages.noMessages": "कोणतेही संदेश आढळले नाहीत",
-    "messages.reply": "उत्तर द्या",
-    "messages.delete": "हटवा",
-    "messages.archive": "संग्रहित करा"
+    "workerProfile.title": "कामगार प्रोफाइल",
+    "workerProfile.name": "नाव",
+    "workerProfile.email": "ईमेल",
+    "workerProfile.phone": "फोन",
+    "workerProfile.skills": "कौशल्ये",
+    "workerProfile.experience": "अनुभव",
+    "workerProfile.availability": "उपलब्धता",
+    "workerProfile.updateProfile": "प्रोफाइल अद्यतनित करा",
+    
+    // Worker Dashboard
+    "workerDashboard.title": "कामगार डॅशबोर्ड",
+    "workerDashboard.welcome": "स्वागत",
+    "workerDashboard.availableJobs": "उपलब्ध नोकरी",
+    "workerDashboard.searchJobs": "नोकरी शोधा",
+    "workerDashboard.jobType": "नोकरीचा प्रकार",
+    "workerDashboard.location": "ठिकाण",
+    "workerDashboard.searchButton": "शोधा",
+    "workerDashboard.jobListings": "नोकरी তালিকা",
+    "workerDashboard.noJobs": "कोणतीही नोकरी आढळली नाही",
+    "workerDashboard.noJobsDesc": "सध्या कोणतीही नोकरी उपलब्ध नाही जी आपल्या निकषांशी जुळते. कृपया नंतर पुन्हा तपासा.",
+    
+    // Professional Dashboard
+    "professional.myProjects": "माझे प्रकल्प",
+    "professional.manage": "आपण पोस्ट केलेल्या बांधकाम प्रकल्पांचे व्यवस्थापन करा",
+    "professional.search": "आपले प्रकल्प शोधा...",
+    "professional.allCategories": "सर्व श्रेणी",
+    "professional.searchButton": "शोधा",
+    "professional.allProjects": "सर्व प्रकल्प",
+    "professional.active": "सक्रिय",
+    "professional.completed": "पूर्ण",
+    "professional.noProjects": "अद्याप कोणताही प्रकल्प नाही",
+    "professional.noProjectsDesc": "आपण अद्याप कोणताही प्रकल्प पोस्ट केलेला नाही. प्रारंभ करण्यासाठी आपला पहिला प्रकल्प तयार करा!",
+    "professional.postFirst": "आपला पहिला प्रकल्प पोस्ट करा",
+    "professional.postProject": "आपला प्रकल्प पोस्ट करा",
+    "professional.fillForm": "नवीन प्रकल्प तयार करण्यासाठी खालील फॉर्म भरा.",
+    "professional.activeProjects": "सक्रिय प्रकल्प",
+    "professional.applicationsReceived": "प्राप्त अर्ज",
+    "professional.workersHired": "भाड्याने घेतलेले कामगार",
+    "professional.averageRating": "सरासरी रेटिंग",
+    "professional.status": "स्थिती",
   },
   
   te: {
-    // ... translations for Telugu language can be added here
+    // Header
+    "header.dashboard": "డాష్‌బోర్డ్",
+    "header.story": "మా కథ",
+    "header.marketplace": "మార్కెట్‌ప్లేస్",
+    "header.getInTouch": "సంప్రదించండి",
+    
+    // Navigation
+    "nav.dashboard": "డాష్‌బోర్డ్",
+    "nav.projects": "ప్రాజెక్టులు",
+    "nav.messages": "సందేశాలు",
+    "nav.analytics": "విశ్లేషణలు",
+    "nav.profile": "ప్రొఫైల్",
+    "nav.workers": "కార్మికులు",
+    "nav.jobs": "ఉద్యోగాలు",
+    
+    // Footer
+    "footer.labourHub": "లేబర్ హబ్",
+    "footer.rights": "అన్ని హక్కులు ప్రత్యేకించబడ్డాయి",
+    "footer.labourNet": "లేబర్నెట్",
+    "footer.aboutUs": "మా గురించి",
+    "footer.ourWork": "మా పని",
+    "footer.linkedin": "లింక్డ్‌ఇన్",
+    "footer.contactUs": "సంప్రదించండి",
+    "footer.copyright": "లేబర్నెట్. అన్ని హక్కులు ప్రత్యేకించబడ్డాయి.",
+    "footer.privacy": "గోప్యతా విధానం",
+    "footer.terms": "సేవా నిబంధనలు",
+    "footer.cookies": "కుకీల సెట్టింగ్‌లు",
+    "footer.quickLinks": "త్వరిత లింక్‌లు",
+    "footer.services": "మా సేవలు",
+    "footer.projectManagement": "ప్రాజెక్ట్ నిర్వహణ",
+    "footer.ourServices": "మా సేవలు",
+    
+    // Hero section
+    "hero.title": "నిర్మాణాన్ని శక్తివంతం చేయడం, భవిష్యత్తును నిర్మించడం",
+    "hero.subtitle": "స్మార్ట్, డిజిటల్ ప్లాట్‌ఫారమ్ ద్వారా బిల్డర్లు, కాంట్రాక్టర్లు మరియు కార్మికులను కనెక్ట్ చేయడం.",
+    "hero.button": "మీ ప్రయాణాన్ని ప్రారంభించండి",
+    
+    // Achievement Section
+    "achievement.title": "మా విజయాలు",
+    "achievement.projectsCompleted": "పూర్తయిన ప్రాజెక్టులు",
+    "achievement.workersEmployed": "ఉద్యోగులు నియమించబడ్డారు",
+    "achievement.contractorsConnected": "కాంట్రాక్టర్లు కనెక్ట్ అయ్యారు",
+    "achievement.countriesActive": "దేశాలు చురుకుగా ఉన్నాయి",
+    
+    // Gallery Section
+    "gallery.title": "మా గ్యాలరీ",
+    "gallery.subtitle": "మా కొన్ని విజయవంతమైన ప్రాజెక్టులను మరియు వాటి వెనుక ఉన్న నైపుణ్యం కలిగిన నిపుణులను అన్వేషించండి.",
+    
+    // Contact section
+    "contact.title": "సంప్రదించండి",
+    "contact.subtitle": "మీకు ప్రశ్నలు ఉంటే లేదా మా సేవల గురించి మరింత తెలుసుకోవాలనుకుంటున్నారా? మమ్మల్ని నేరుగా సంప్రదించండి లేదా ఫారమ్ నింపండి.",
+    "contact.info": "సంప్రదింపు సమాచారం",
+    "contact.email": "ఇమెయిల్:",
+    "contact.phone": "ఫోన్:",
+    "contact.address": "చిరునామా:",
+    
+    // Journey page
+    "journey.title": "లేబర్నెట్‌తో మీ ప్రయాణాన్ని ప్రారంభించండి",
+    "journey.subtitle": "మీ అవసరాలకు బాగా సరిపోయే పాత్రను ఎంచుకోండి మరియు ఈ రోజు మీ నిర్మాణ వృత్తి ప్రయాణాన్ని ప్రారంభించండి",
+    "journey.readyText": "తదుపరి దశకు సిద్ధంగా ఉన్నారా? మీ ప్రొఫైల్‌ను సృష్టించండి మరియు అవకాశాలను అన్వేషించడం ప్రారంభించండి.",
+    "journey.createProfile": "మీ ప్రొఫైల్‌ను సృష్టించండి",
+    
+    // Worker role
+    "role.worker.title": "నిర్మాణ కార్మికుడు",
+    "role.worker.description": "నైపుణ్యం కలిగిన నిర్మాణ కార్మికుల మా నెట్‌వర్క్‌లో చేరండి మరియు వివిధ ప్రాజెక్టులలో సాధారణ ఉపాధి అవకాశాలను కనుగొనండి.",
+    "role.worker.feature1": "రోజువారీ మరియు వారపు ఉద్యోగ అవకాశాలకు ప్రాప్యత",
+    "role.worker.feature2": "పోటీ వేతన రేట్లు",
+    "role.worker.feature3": "నైపుణ్యాల అభివృద్ధి మరియు శిక్షణ",
+    "role.worker.feature4": "భద్రతా పరికరాలు మరియు మార్గదర్శకాలు",
+    
+    // Professional role
+    "role.professional.title": "వృత్తి నిపుణుడు",
+    "role.professional.description": "ఎలక్ట్రికల్, ప్లంబింగ్, వడ్రంగి మరియు ఇతర ప్రత్యేక వృత్తులలో లైసెన్స్ పొందిన నిపుణుల కోసం. క్లయింట్లు మరియు ప్రాజెక్టులతో నేరుగా కనెక్ట్ అవ్వండి.",
+    "role.professional.feature1": "మీ ధృవపత్రాలు మరియు పోర్ట్‌ఫోలియోను ప్రదర్శించండి",
+    "role.professional.feature2": "కాంట్రాక్టర్లు మరియు క్లయింట్లతో కనెక్ట్ అవ్వండి",
+    "role.professional.feature3": "మీ లభ్యత మరియు బుకింగ్‌లను నిర్వహించండి",
+    "role.professional.feature4": "మా ప్లాట్‌ఫారమ్ ద్వారా సురక్షితంగా చెల్లించండి",
+    
+    // Contractor role
+    "role.contractor.title": "కాంట్రాక్టర్",
+    "role.contractor.description": "మీ ప్రాజెక్ట్ నిర్వహణను క్రమబద్ధీకరించండి మరియు ప్రతి ఉద్యోగానికి సరైన కార్మికులను కనుగొనండి. మీ నిర్మాణ ప్రాజెక్టుల కోసం నమ్మకమైన బృందాలను నిర్మించండి.",
+    "role.contractor.feature1": "ఉద్యోగాలను పోస్ట్ చేయండి మరియు అర్హత కలిగిన కార్మికులను త్వరగా కనుగొనండి",
+    "role.contractor.feature2": "కార్మికుల అర్హతలు మరియు అనుభవాన్ని ధృవీకరించండి",
+    "role.contractor.feature3": "చెల్లింపులు మరియు డాక్యుమెంటేషన్‌ను నిర్వహించండి",
+    "role.contractor.feature4": "ప్రాజెక్ట్ పురోగతి మరియు జట్టు పనితీరును ట్రాక్ చేయండి",
+    
+    // Login page
+    "login.welcome": "తిరిగి స్వాగతం!",
+    "login.rolePrompt": "లాగిన్ చేయి",
+    "login.worker": "కార్మికుడు",
+    "login.professional": "వృత్తి నిపుణుడు",
+    "login.contractor": "కాంట్రాక్టర్",
+    "login.email": "ఇమెయిల్",
+    "login.password": "పాస్‌వర్డ్",
+    "login.loginButton": "లాగిన్",
+    "login.registerPrompt": "ఖాతా లేదా?",
+    "login.registerLink": "నమోదు",
+    
+    // Worker profile
+    "workerProfile.title": "కార్మికుడు ప్రొఫైల్",
+    "workerProfile.name": "పేరు",
+    "workerProfile.email": "ఇమెయిల్",
+    "workerProfile.phone": "ఫోన్",
+    "workerProfile.skills": "నైపుణ్యాలు",
+    "workerProfile.experience": "అనుభవం",
+    "workerProfile.availability": "లభ్యత",
+    "workerProfile.updateProfile": "ప్రొఫైల్‌ను నవీకరించండి",
+    
+    // Worker Dashboard
+    "workerDashboard.title": "కార్మికుడు డాష్‌బోర్డ్",
+    "workerDashboard.welcome": "స్వాగతం",
+    "workerDashboard.availableJobs": "ఉద్యోగాలు అందుబాటులో ఉన్నాయి",
+    "workerDashboard.searchJobs": "ఉద్యోగాల కోసం వెతుకు",
+    "workerDashboard.jobType": "ఉద్యోగం రకం",
+    "workerDashboard.location": "స్థానం",
+    "workerDashboard.searchButton": "వెతుకు",
+    "workerDashboard.jobListings": "ఉద్యోగ జాబితాలు",
+    "workerDashboard.noJobs": "ఉద్యోగాలు కనుగొనబడలేదు",
+    "workerDashboard.noJobsDesc": "ప్రస్తుతం మీ ప్రమాణాలకు సరిపోయే ఉద్యోగాలు ఏవీ అందుబాటులో లేవు. దయచేసి తరువాత మళ్లీ తనిఖీ చేయండి.",
+    
+    // Professional Dashboard
+    "professional.myProjects": "నా ప్రాజెక్టులు",
+    "professional.manage": "మీరు పోస్ట్ చేసిన నిర్మాణ ప్రాజెక్టులను నిర్వహించండి",
+    "professional.search": "మీ ప్రాజెక్టుల కోసం వెతకండి...",
+    "professional.allCategories": "అన్ని వర్గాలు",
+    "professional.searchButton": "వెతుకు",
+    "professional.allProjects": "అన్ని ప్రాజెక్టులు",
+    "professional.active": "చురుకుగా",
+    "professional.completed": "పూర్తయింది",
+    "professional.noProjects": "ఇంకా ప్రాజెక్టులు లేవు",
+    "professional.noProjectsDesc": "మీరు ఇంకా ఏ ప్రాజెక్టులను పోస్ట్ చేయలేదు. ప్రారంభించడానికి మీ మొదటి ప్రాజెక్ట్‌ను సృష్టించండి!",
+    "professional.postFirst": "మీ మొదటి ప్రాజెక్ట్‌ను పోస్ట్ చేయండి",
+    "professional.postProject": "మీ ప్రాజెక్ట్‌ను పోస్ట్ చేయండి",
+    "professional.fillForm": "క్రొత్త ప్రాజెక్ట్‌ను సృష్టించడానికి క్రింది ఫారమ్‌ను పూరించండి.",
+    "professional.activeProjects": "చురుకైన ప్రాజెక్టులు",
+    "professional.applicationsReceived": "అందుకున్న దరఖాస్తులు",
+    "professional.workersHired": "నియమించబడిన కార్మికులు",
+    "professional.averageRating": "సగటు రేటింగ్",
+    "professional.status": "స్థితి",
   },
   
   ml: {
-    // ... translations for Malayalam language can be added here
-  },
-  
-  ta: {
-    // ... translations for Tamil language can be added here
-  },
-  
-  kn: {
-    // ... translations for Kannada language can be added here
-  },
-  
-  gu: {
-    // ... translations for Gujarati language can be added here
-  },
-  
-  pa: {
-    // ... translations for Punjabi language can be added here
-  }
-};
+    // Header
+    "header.dashboard": "ഡാഷ്ബോർഡ്",
+    "header.story": "ഞങ്ങളുടെ കഥ",
+    "header.marketplace": "മാർക്കറ്റ്പ്ലേസ്",
+    "header.getInTouch": "ബന്ധപ്പെടുക",
+    
+    // Navigation
+    "nav.dashboard": "ഡാഷ്ബോർഡ്",
+    "nav.projects": "പദ്ധതികൾ",
+    "nav.messages": "സന്ദേശങ്ങൾ",
+    "nav.analytics": "സ്ഥിതിവിവരക്കണക്കുകൾ",
+    "nav.profile": "പ്രൊഫൈൽ",
+    "nav.workers": "തൊഴിലാളികൾ",
+    "nav.jobs": "ജോലികൾ",
+    
+    // Footer
+    "footer.labourHub": "തൊഴിൽ ഹബ്",
+    "footer.rights": "എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തമാണ്",
+    "footer.labourNet": "തൊഴിൽ നെറ്റ്",
+    "footer.aboutUs": "ഞങ്ങളെക്കുറിച്ച്",
+    "footer.ourWork": "ഞങ്ങളുടെ ജോലി",
+    "footer.linkedin": "ലിങ്ക്ഡ്ഇൻ",
+    "footer.contactUs": "ഞങ്ങളെ ബന്ധപ്പെടുക",
+    "footer.copyright": "തൊഴിൽ നെറ്റ്. എല്ലാ അവകാശങ്ങളും നിക്ഷിപ്തമാണ്.",
+    "footer.privacy": "സ്വകാര്യതാ നയം",
+    "footer.terms": "സേവന നിബന്ധനകൾ",
+    "footer.cookies": "കുക്കീസ് ക്രമീകരണങ്ങൾ",
+    "footer.quickLinks": "త్వ

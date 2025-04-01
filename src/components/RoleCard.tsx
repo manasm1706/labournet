@@ -1,41 +1,45 @@
 
 import React from "react";
-import { FeatureItem } from "./FeatureItem";
 
-interface Feature {
-  icon: string;
+interface FeatureItem {
+  icon?: string;
   text: string;
 }
 
 interface RoleCardProps {
   title: string;
-  icon: string;
+  icon?: string;
   description: string;
-  features: Feature[];
+  features: FeatureItem[];
 }
 
 export const RoleCard: React.FC<RoleCardProps> = ({
   title,
-  icon,
   description,
   features,
 }) => {
   return (
-    <div className="bg-white shadow-[0px_4px_12px_rgba(0,0,0,0.1)] border flex w-full flex-col text-sm text-[rgba(113,123,158,1)] font-normal mx-auto px-[33px] py-[34px] rounded-xl border-[rgba(231,231,241,1)] border-solid max-md:mt-8 max-md:px-5">
-      <div className="flex items-stretch gap-4 text-2xl text-[rgba(18,18,36,1)] font-bold whitespace-nowrap">
-        <img
-          src={icon}
-          className="aspect-[1] object-contain w-12 shrink-0 rounded-lg"
-          alt={`${title} icon`}
-        />
-        <div className="my-auto">{title}</div>
+    <div className="bg-white rounded-lg shadow-md p-6 h-full flex flex-col">
+      <div className="mb-4 flex items-center justify-center">
+        <div className={`w-16 h-16 flex items-center justify-center rounded-full bg-[#004A57] text-white text-2xl font-bold`}>
+          {title.charAt(0)}
+        </div>
       </div>
-      <div className="text-base leading-6 self-stretch mt-[26px]">
-        {description}
+      <h3 className="text-xl font-semibold mb-2 text-center">{title}</h3>
+      <p className="text-gray-600 mb-6 text-center">{description}</p>
+      <div className="mt-auto">
+        <h4 className="font-medium mb-3 text-[#004A57]">Key Benefits:</h4>
+        <ul className="space-y-3">
+          {features.map((feature, index) => (
+            <li key={index} className="flex items-start">
+              <div className="flex-shrink-0 w-5 h-5 mr-2 bg-[#004A57] rounded-full flex items-center justify-center">
+                <span className="text-white text-xs">✓</span>
+              </div>
+              <span className="text-sm text-gray-700">{feature.text}</span>
+            </li>
+          ))}
+        </ul>
       </div>
-      {features.map((feature, index) => (
-        <FeatureItem key={index} icon={feature.icon} text={feature.text} />
-      ))}
     </div>
   );
 };
