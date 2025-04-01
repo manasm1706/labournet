@@ -6,48 +6,50 @@ import Footer from "@/components/layout/Footer";
 import { PageHeader } from "@/components/PageHeader";
 import { RoleCard } from "@/components/RoleCard";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Journey: React.FC = () => {
   const navigate = useNavigate();
   const [selectedRole, setSelectedRole] = useState<string | null>(null);
+  const { t } = useLanguage();
   
   const checkIcon = "https://cdn.builder.io/api/v1/image/assets/TEMP/70b17f95af25fb1ca7f0dae89feda5083f69926b14013c5a2773d4964e3d6a6f?apiKey=c295e679d9414a73a1381f5a8a56ab87&";
   
   const roles = [
     {
       id: "worker",
-      title: "Construction Worker",
+      title: t("role.worker.title"),
       icon: "public/lovable-uploads/90d991c9-8176-439c-bad5-165655fabe79.png",
-      description: "Join our network of skilled construction workers and find regular employment opportunities across various projects.",
+      description: t("role.worker.description"),
       features: [
-        { icon: checkIcon, text: "Access to daily and weekly job opportunities" },
-        { icon: checkIcon, text: "Competitive pay rates" },
-        { icon: checkIcon, text: "Skills development and training" },
-        { icon: checkIcon, text: "Safety equipment and guidelines" },
+        { icon: checkIcon, text: t("role.worker.feature1") },
+        { icon: checkIcon, text: t("role.worker.feature2") },
+        { icon: checkIcon, text: t("role.worker.feature3") },
+        { icon: checkIcon, text: t("role.worker.feature4") },
       ],
     },
     {
       id: "professional",
-      title: "Professional Builder",
+      title: t("role.professional.title"),
       icon: "public/lovable-uploads/f1cebe40-9e7f-4534-9c92-38664e054dd0.png",
-      description: "For licensed professionals in electrical, plumbing, carpentry and other specialized trades. Connect with clients and projects directly.",
+      description: t("role.professional.description"),
       features: [
-        { icon: checkIcon, text: "Showcase your certifications and portfolio" },
-        { icon: checkIcon, text: "Connect with contractors and clients" },
-        { icon: checkIcon, text: "Manage your availability and bookings" },
-        { icon: checkIcon, text: "Get paid securely through our platform" },
+        { icon: checkIcon, text: t("role.professional.feature1") },
+        { icon: checkIcon, text: t("role.professional.feature2") },
+        { icon: checkIcon, text: t("role.professional.feature3") },
+        { icon: checkIcon, text: t("role.professional.feature4") },
       ],
     },
     {
       id: "contractor",
-      title: "Contractor",
+      title: t("role.contractor.title"),
       icon: "public/lovable-uploads/fdbb3d24-072b-479b-9feb-e014ec588c22.png",
-      description: "Streamline your project management and find the right workers for each job. Build reliable teams for your construction projects.",
+      description: t("role.contractor.description"),
       features: [
-        { icon: checkIcon, text: "Post jobs and find qualified workers quickly" },
-        { icon: checkIcon, text: "Verify worker qualifications and experience" },
-        { icon: checkIcon, text: "Manage payments and documentation" },
-        { icon: checkIcon, text: "Track project progress and team performance" },
+        { icon: checkIcon, text: t("role.contractor.feature1") },
+        { icon: checkIcon, text: t("role.contractor.feature2") },
+        { icon: checkIcon, text: t("role.contractor.feature3") },
+        { icon: checkIcon, text: t("role.contractor.feature4") },
       ],
     },
   ];
@@ -71,8 +73,8 @@ const Journey: React.FC = () => {
       <main className="flex-grow bg-[#EDEEF1] px-6 py-16">
         <div className="max-w-6xl mx-auto">
           <PageHeader 
-            title="Start Your Journey with LabourNet" 
-            subtitle="Choose the role that best fits your needs and begin your construction career journey today"
+            title={t("journey.title")}
+            subtitle={t("journey.subtitle")}
           />
           
           <div className="mt-16 grid md:grid-cols-3 gap-8 max-md:grid-cols-1">
@@ -102,14 +104,14 @@ const Journey: React.FC = () => {
           
           <div className="mt-16 text-center">
             <p className="text-[rgba(113,123,158,1)] text-lg mb-8">
-              Ready to take the next step? Create your profile and start exploring opportunities.
+              {t("journey.readyText")}
             </p>
             <Button 
               variant="primary" 
               size="lg"
               onClick={handleCreateProfile}
             >
-              Create Your Profile
+              {t("journey.createProfile")}
             </Button>
           </div>
         </div>

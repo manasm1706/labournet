@@ -1,8 +1,11 @@
 
 import React from "react";
 import { Card } from "@/components/ui/Card";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const AchievementsSection: React.FC = () => {
+  const { t } = useLanguage();
+  
   const cards = [
     {
       id: 1,
@@ -37,10 +40,10 @@ const AchievementsSection: React.FC = () => {
     <section className="bg-[#EDEEF1] px-8 py-[120px]">
       <div className="max-w-[800px] mb-10">
         <h2 className="text-black text-[56px] leading-[67.2px] max-sm:text-4xl">
-          Explore Our Achievements
+          {t("achievements.title")}
         </h2>
         <p className="text-black text-lg leading-[27px]">
-          See how we support builders and contractors.
+          {t("achievements.subtitle")}
         </p>
       </div>
       <div className="flex justify-center gap-6 flex-wrap max-md:flex-col">

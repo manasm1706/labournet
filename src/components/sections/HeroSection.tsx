@@ -1,9 +1,12 @@
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const HeroSection: React.FC = () => {
   const navigate = useNavigate();
+  const { t } = useLanguage();
 
   const handleStartJourney = () => {
     navigate("/journey");
@@ -13,17 +16,17 @@ const HeroSection: React.FC = () => {
     <section className="flex justify-center items-center bg-[#004A57] px-2 max-md:flex-col">
       <div className="flex flex-col items-center gap-10 max-w-[720px] text-center">
         <h1 className="text-[#EEE] text-7xl leading-[77.76px] tracking-[-0.72px] max-md:text-5xl max-sm:text-4xl">
-          Empowering Builders Everywhere
+          {t("hero.title")}
         </h1>
         <p className="text-white text-[22px] leading-[30.8px] max-sm:text-lg">
-          Join a community of skilled professionals and contractors.
+          {t("hero.subtitle")}
         </p>
         <Button 
           variant="default" 
           size="default"
           onClick={handleStartJourney}
         >
-          Start Your Journey
+          {t("hero.button")}
         </Button>
       </div>
       <div

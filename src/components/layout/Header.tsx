@@ -2,8 +2,11 @@
 import React from "react";
 import LanguageSelector from "../LanguageSelector";
 import { Button } from "../ui/button";
+import { useLanguage } from "../../contexts/LanguageContext";
 
 const Header: React.FC = () => {
+  const { t } = useLanguage();
+  
   return (
     <header className="flex w-full justify-between items-center bg-[#00353F] p-2">
       <div className="flex items-center gap-2 text-[#EEE] text-base px-2 py-0">
@@ -15,20 +18,20 @@ const Header: React.FC = () => {
       
       <nav className="flex items-center gap-4 max-sm:hidden">
         <a href="#dashboard" className="text-[#EEE] text-xs px-4 py-0">
-          Dashboard
+          {t("header.dashboard")}
         </a>
         <a href="#story" className="text-[#EEE] text-xs px-4 py-0">
-          Our Story
+          {t("header.story")}
         </a>
         <a href="#marketplace" className="text-[#EEE] text-xs px-4 py-0">
-          Marketplace
+          {t("header.marketplace")}
         </a>
       </nav>
       
       <div className="flex items-center gap-4">
         <LanguageSelector />
         <Button variant="outline" size="sm" className="text-xs">
-          Get in Touch
+          {t("header.getInTouch")}
         </Button>
       </div>
     </header>

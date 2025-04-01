@@ -1,7 +1,11 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const GallerySection: React.FC = () => {
+  const { t } = useLanguage();
+  
   const images = [
     {
       id: 10,
@@ -43,13 +47,13 @@ const GallerySection: React.FC = () => {
       </div>
       <div className="flex flex-col gap-8 flex-1 min-w-[400px]">
         <h2 className="text-black text-[56px] leading-[67.2px]">
-          Join the Builder Revolution
+          {t("gallery.title")}
         </h2>
         <p className="text-black text-lg leading-[27px]">
-          We provide the tools and connections you need to thrive.
+          {t("gallery.subtitle")}
         </p>
-        <Button variant="primary" shape="pill" className="self-start">
-          Get Involved
+        <Button variant="primary" className="self-start">
+          {t("gallery.button")}
         </Button>
       </div>
     </section>

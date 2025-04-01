@@ -1,5 +1,7 @@
 
 import React, { useState } from "react";
+import { useLanguage } from "../contexts/LanguageContext";
+import { AvailableLanguages } from "../utils/translations";
 
 const languages = [
   { code: "en", name: "English" },
@@ -15,19 +17,18 @@ const languages = [
 
 const LanguageSelector: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
+  const { language, setLanguage } = useLanguage();
+  
+  const selectedLanguage = languages.find(lang => lang.code === language) || languages[0];
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
 
-  const selectLanguage = (language) => {
-    setSelectedLanguage(language);
+  const selectLanguage = (lang: { code: string; name: string }) => {
+    setLanguage(lang.code as AvailableLanguages);
     setIsOpen(false);
-    
-    // Here we would normally implement the actual translation functionality
-    console.log(`Language changed to: ${language.name}`);
-    // This would trigger a context update in a real implementation
+    console.log(`Language changed to: ${lang.name}`);
   };
 
   return (
@@ -58,17 +59,17 @@ const LanguageSelector: React.FC = () => {
       {isOpen && (
         <div className="absolute top-full mt-1 right-0 bg-[#00353F] border border-[#004A57] rounded-md shadow-lg z-50 min-w-[150px]">
           <ul className="py-1 max-h-60 overflow-y-auto">
-            {languages.map((language) => (
-              <li key={language.code}>
+            {languages.map((lang) => (
+              <li key={lang.code}>
                 <button
-                  onClick={() => selectLanguage(language)}
+                  onClick={() => selectLanguage(lang)}
                   className={`block px-4 py-2 text-xs w-full text-left ${
-                    selectedLanguage.code === language.code
+                    selectedLanguage.code === lang.code
                       ? "bg-[#004A57] text-white"
                       : "text-[#EEE] hover:bg-[#004A57]"
                   }`}
                 >
-                  {language.name}
+                  {lang.name}
                 </button>
               </li>
             ))}
