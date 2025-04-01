@@ -1,14 +1,18 @@
+
 import React from "react";
+import LanguageSelector from "../LanguageSelector";
+import { Button } from "../ui/button";
 
 const Header: React.FC = () => {
   return (
     <header className="flex w-full justify-between items-center bg-[#00353F] p-2">
       <div className="flex items-center gap-2 text-[#EEE] text-base px-2 py-0">
-      <div className="w-6 h-6">
-      <img src="/LabourNet_logo.png" alt="LabourNet Logo" className="w-full h-full object-contain" />
+        <div className="w-6 h-6">
+          <img src="/LabourNet_logo.png" alt="LabourNet Logo" className="w-full h-full object-contain" />
+        </div>
+        <span>LabourNet</span>
       </div>
-      <span>LabourNet</span>
-      </div>
+      
       <nav className="flex items-center gap-4 max-sm:hidden">
         <a href="#dashboard" className="text-[#EEE] text-xs px-4 py-0">
           Dashboard
@@ -20,10 +24,13 @@ const Header: React.FC = () => {
           Marketplace
         </a>
       </nav>
-      <div className="text-white text-xs">Language</div>
-      <button className="border text-[#EEE] text-xs px-6 py-4 rounded-lg border-solid border-[#EEE] hover:bg-[#004A57] transition-colors">
-        Get in Touch
-      </button>
+      
+      <div className="flex items-center gap-4">
+        <LanguageSelector />
+        <Button variant="outline" size="sm" className="text-xs">
+          Get in Touch
+        </Button>
+      </div>
     </header>
   );
 };

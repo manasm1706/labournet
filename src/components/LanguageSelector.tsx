@@ -1,10 +1,16 @@
+
 import React, { useState } from "react";
 
 const languages = [
   { code: "en", name: "English" },
-  { code: "es", name: "Español" },
-  { code: "fr", name: "Français" },
-  { code: "de", name: "Deutsch" },
+  { code: "hi", name: "Hindi" },
+  { code: "mr", name: "Marathi" },
+  { code: "te", name: "Telugu" },
+  { code: "ml", name: "Malayalam" },
+  { code: "ta", name: "Tamil" },
+  { code: "kn", name: "Kannada" },
+  { code: "gu", name: "Gujarati" },
+  { code: "pa", name: "Punjabi" },
 ];
 
 const LanguageSelector: React.FC = () => {
@@ -18,6 +24,10 @@ const LanguageSelector: React.FC = () => {
   const selectLanguage = (language) => {
     setSelectedLanguage(language);
     setIsOpen(false);
+    
+    // Here we would normally implement the actual translation functionality
+    console.log(`Language changed to: ${language.name}`);
+    // This would trigger a context update in a real implementation
   };
 
   return (
@@ -46,8 +56,8 @@ const LanguageSelector: React.FC = () => {
       </button>
 
       {isOpen && (
-        <div className="absolute top-full mt-1 right-0 bg-[#00353F] border border-[#004A57] rounded-md shadow-lg z-10 min-w-[120px]">
-          <ul className="py-1">
+        <div className="absolute top-full mt-1 right-0 bg-[#00353F] border border-[#004A57] rounded-md shadow-lg z-50 min-w-[150px]">
+          <ul className="py-1 max-h-60 overflow-y-auto">
             {languages.map((language) => (
               <li key={language.code}>
                 <button
