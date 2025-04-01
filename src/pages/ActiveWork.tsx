@@ -1,9 +1,8 @@
-
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from "@/components/ui/dialog";
-import { Calendar, Clock, CheckCircle, MapPin, FileText, User } from "lucide-react";
+import { Calendar, Clock, CheckCircle, MapPin, FileText, User, Briefcase } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 
@@ -154,7 +153,7 @@ const ActiveWork: React.FC = () => {
         ) : (
           <div className="text-center py-12 bg-white rounded-lg shadow-sm">
             <div className="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center mx-auto mb-4">
-              <BriefcaseIcon className="w-8 h-8 text-gray-400" />
+              <Briefcase className="w-8 h-8 text-gray-400" />
             </div>
             <h3 className="text-lg font-medium text-gray-600">No Active Jobs</h3>
             <p className="text-gray-500 max-w-md mx-auto mt-2 mb-6">

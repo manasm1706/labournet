@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
@@ -25,8 +24,6 @@ const CompanyProfile: React.FC = () => {
           <Button 
             variant="primary" 
             className="bg-[#FF4B55] hover:bg-[#e03e48] transition-colors duration-300"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
           >
             <Link to="/elite-construction-project">Post Project</Link>
           </Button>
@@ -180,7 +177,6 @@ const CompanyProfile: React.FC = () => {
                         <motion.div 
                           key={project.id}
                           className="border border-gray-100 rounded-lg p-4 shadow-sm hover:shadow-md transition-all duration-300"
-                          whileHover={{ scale: 1.01, borderColor: "#FF4B55" }}
                         >
                           <div className="flex justify-between">
                             <div>

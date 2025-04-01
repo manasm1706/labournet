@@ -7,40 +7,10 @@ import { Upload } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { useProjectContext } from "./PostProjectForm";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-// Create a context to share project data across components
-export const ProjectContext = React.createContext<{
-  projects: any[];
-  addProject: (project: any) => void;
-  removeProject: (id: number) => void;
-}>({
-  projects: [],
-  addProject: () => {},
-  removeProject: () => {},
-});
-
-export const useProjectContext = () => React.useContext(ProjectContext);
-
-export const ProjectProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [projects, setProjects] = useState<any[]>([]);
-
-  const addProject = (project: any) => {
-    setProjects((prev) => [...prev, project]);
-  };
-
-  const removeProject = (id: number) => {
-    setProjects((prev) => prev.filter(project => project.id !== id));
-  };
-
-  return (
-    <ProjectContext.Provider value={{ projects, addProject, removeProject }}>
-      {children}
-    </ProjectContext.Provider>
-  );
-};
-
-const PostProjectForm: React.FC = () => {
+const ProfessionalProjectForm: React.FC = () => {
   const { toast } = useToast();
   const navigate = useNavigate();
   const { addProject } = useProjectContext();
@@ -53,8 +23,8 @@ const PostProjectForm: React.FC = () => {
     hourlyRate: "",
     jobDescription: "",
     requirements: "",
-    company: "Elite Construction Ltd",
-    projectType: "Commercial",
+    company: "Professional Builder",
+    projectType: "Residential",
     timeline: "3 months",
     expiresAfter: "30",
     postedDate: new Date().toISOString(),
@@ -78,13 +48,13 @@ const PostProjectForm: React.FC = () => {
         !formData.hourlyRate || !formData.jobDescription || !formData.requirements) {
       toast({
         title: "Missing Information",
-        description: "Please fill all required fields before posting the job.",
+        description: "Please fill all required fields before posting the project.",
         variant: "destructive"
       });
       return;
     }
     
-    console.log("Post Job Form submitted:", formData);
+    console.log("Professional Project Form submitted:", formData);
     
     // Add the new project to context
     addProject({
@@ -98,11 +68,11 @@ const PostProjectForm: React.FC = () => {
     
     // Show success toast notification
     toast({
-      title: "Job Posted Successfully!",
-      description: "Your job has been posted and is now visible to professionals.",
+      title: "Project Posted Successfully!",
+      description: "Your project has been posted and is now visible on your dashboard.",
     });
     
-    // Navigate to dashboard
+    // Navigate to professional dashboard
     setTimeout(() => {
       navigate("/professional-dashboard");
     }, 1500);
@@ -115,8 +85,8 @@ const PostProjectForm: React.FC = () => {
       hourlyRate: "",
       jobDescription: "",
       requirements: "",
-      company: "Elite Construction Ltd",
-      projectType: "Commercial",
+      company: "Professional Builder",
+      projectType: "Residential",
       timeline: "3 months",
       expiresAfter: "30",
       postedDate: new Date().toISOString(),
@@ -150,7 +120,7 @@ const PostProjectForm: React.FC = () => {
                 name="title"
                 value={formData.title}
                 onChange={handleChange}
-                placeholder="e.g. Construction Manager"
+                placeholder="e.g. Kitchen Renovation"
                 className="mt-1"
                 required
               />
@@ -236,24 +206,6 @@ const PostProjectForm: React.FC = () => {
               </select>
             </div>
           </div>
-          
-          <div className="mt-6">
-            <Label htmlFor="expiresAfter">{t("project.removeAfter")}</Label>
-            <select
-              id="expiresAfter"
-              name="expiresAfter"
-              value={formData.expiresAfter}
-              onChange={handleChange}
-              className="w-full mt-1 p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#FF4B55]"
-            >
-              <option value="7">{t("project.7days")}</option>
-              <option value="14">{t("project.14days")}</option>
-              <option value="30">{t("project.30days")}</option>
-              <option value="60">{t("project.60days")}</option>
-              <option value="90">{t("project.90days")}</option>
-              <option value="never">{t("project.dontRemove")}</option>
-            </select>
-          </div>
         </motion.div>
 
         <motion.div 
@@ -335,4 +287,4 @@ const PostProjectForm: React.FC = () => {
   );
 };
 
-export default PostProjectForm;
+export default ProfessionalProjectForm;

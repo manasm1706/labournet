@@ -3,11 +3,12 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Search, Plus } from "lucide-react";
+import { Search } from "lucide-react";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
-import PostProjectForm from "@/components/PostProjectForm";
+import ProfessionalProjectForm from "@/components/ProfessionalProjectForm";
 import Footer from "@/components/layout/Footer";
 import ProfessionalNavbar from "@/components/layout/ProfessionalNavbar";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProfessionalProjects: React.FC = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -15,6 +16,7 @@ const ProfessionalProjects: React.FC = () => {
     projectType: "all",
     status: "all"
   });
+  const { t } = useLanguage();
   
   // Mock data for available projects
   const projects = [
@@ -100,14 +102,14 @@ const ProfessionalProjects: React.FC = () => {
       {/* Main Content */}
       <main className="container mx-auto py-8 px-4 max-w-6xl flex-grow">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-2xl font-bold">Available Projects</h1>
+          <h1 className="text-2xl font-bold">{t("professional.myProjects")}</h1>
           <Dialog>
             <DialogTrigger asChild>
-              <Button variant="primary">Post a Project</Button>
+              <Button variant="primary">{t("project.postNew")}</Button>
             </DialogTrigger>
             <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden">
               <div className="max-h-[calc(90vh-80px)] overflow-y-auto pr-2">
-                <PostProjectForm />
+                <ProfessionalProjectForm />
               </div>
             </DialogContent>
           </Dialog>
@@ -121,7 +123,7 @@ const ProfessionalProjects: React.FC = () => {
                 <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={18} />
                 <Input
                   type="text"
-                  placeholder="Search projects..."
+                  placeholder={t("professional.search")}
                   className="pl-10"
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
@@ -130,7 +132,7 @@ const ProfessionalProjects: React.FC = () => {
             </div>
             
             <div className="mb-6">
-              <h3 className="font-semibold mb-3">Project Type</h3>
+              <h3 className="font-semibold mb-3">{t("project.jobType")}</h3>
               <div className="space-y-2">
                 {["All Types", "Commercial", "Residential", "Healthcare", "Educational", "Industrial"].map((type) => (
                   <div key={type} className="flex items-center">
@@ -151,7 +153,7 @@ const ProfessionalProjects: React.FC = () => {
             </div>
             
             <div className="mb-6">
-              <h3 className="font-semibold mb-3">Status</h3>
+              <h3 className="font-semibold mb-3">{t("professional.status")}</h3>
               <div className="space-y-2">
                 {["All Status", "Active", "Urgent"].map((status) => (
                   <div key={status} className="flex items-center">
@@ -191,7 +193,7 @@ const ProfessionalProjects: React.FC = () => {
                     <span className={`text-xs px-2 py-1 rounded ${
                       project.status === 'urgent' ? 'bg-red-100 text-red-700' : 'bg-green-100 text-green-700'
                     }`}>
-                      {project.status === 'urgent' ? 'Urgent' : 'Active'}
+                      {project.status === 'urgent' ? 'Urgent' : t("professional.active")}
                     </span>
                     <h2 className="text-xl font-bold mt-2">{project.title}</h2>
                     <div className="flex items-center text-sm text-gray-500 mt-1">

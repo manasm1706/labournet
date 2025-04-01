@@ -8,12 +8,14 @@ import Footer from "@/components/layout/Footer";
 import { useProjectContext } from "@/components/PostProjectForm";
 import { Briefcase, Calendar, MapPin, Clock } from "lucide-react";
 import ProfessionalNavbar from "@/components/layout/ProfessionalNavbar";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const ProfessionalDashboard: React.FC = () => {
   const { projects } = useProjectContext();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All Categories");
   const [activeFilter, setActiveFilter] = useState("All Projects");
+  const { t } = useLanguage();
 
   // Filter projects based on search, category, and status
   const filteredProjects = projects.filter(project => {
@@ -44,8 +46,8 @@ const ProfessionalDashboard: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <h1 className="text-2xl font-bold text-[#121224]">My Projects</h1>
-          <p className="text-[#717B9E]">Manage your posted construction projects</p>
+          <h1 className="text-2xl font-bold text-[#121224]">{t("professional.myProjects")}</h1>
+          <p className="text-[#717B9E]">{t("professional.manage")}</p>
         </motion.div>
 
         {/* Search Bar */}
@@ -59,7 +61,7 @@ const ProfessionalDashboard: React.FC = () => {
           <div className="flex-grow">
             <input 
               type="text" 
-              placeholder="Search your projects..." 
+              placeholder={t("professional.search")} 
               className="w-full p-3 border border-gray-300 rounded hover:border-[#FF4B55] focus:border-[#FF4B55] focus:outline-none transition-colors"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
@@ -71,7 +73,7 @@ const ProfessionalDashboard: React.FC = () => {
               value={selectedCategory}
               onChange={(e) => setSelectedCategory(e.target.value)}
             >
-              <option>All Categories</option>
+              <option>{t("professional.allCategories")}</option>
               <option>Residential</option>
               <option>Commercial</option>
               <option>Industrial</option>
@@ -85,7 +87,7 @@ const ProfessionalDashboard: React.FC = () => {
               type="submit"
               className="bg-[#FF4B55] text-white px-6 py-3 rounded hover:bg-[#E43F49] transition-colors"
             >
-              Search
+              {t("professional.searchButton")}
             </button>
           </motion.div>
         </motion.form>
@@ -101,19 +103,19 @@ const ProfessionalDashboard: React.FC = () => {
             className={`px-3 py-1 rounded-full text-sm cursor-pointer ${activeFilter === "All Projects" ? "bg-[#004A57] text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
             onClick={() => setActiveFilter("All Projects")}
           >
-            All Projects
+            {t("professional.allProjects")}
           </span>
           <span 
             className={`px-3 py-1 rounded-full text-sm cursor-pointer ${activeFilter === "Active" ? "bg-[#004A57] text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
             onClick={() => setActiveFilter("Active")}
           >
-            Active
+            {t("professional.active")}
           </span>
           <span 
             className={`px-3 py-1 rounded-full text-sm cursor-pointer ${activeFilter === "Completed" ? "bg-[#004A57] text-white" : "bg-gray-200 text-gray-700 hover:bg-gray-300"}`}
             onClick={() => setActiveFilter("Completed")}
           >
-            Completed
+            {t("professional.completed")}
           </span>
         </motion.div>
 
@@ -143,8 +145,8 @@ const ProfessionalDashboard: React.FC = () => {
                       project.status === 'cancelled' ? 'bg-red-100 text-red-700' :
                       'bg-yellow-100 text-yellow-700'
                     }`}>
-                      {project.status === 'active' ? 'Active' :
-                       project.status === 'completed' ? 'Completed' :
+                      {project.status === 'active' ? t("professional.active") :
+                       project.status === 'completed' ? t("professional.completed") :
                        project.status === 'cancelled' ? 'Cancelled' : 'Posted'}
                     </span>
                   </div>
@@ -159,18 +161,18 @@ const ProfessionalDashboard: React.FC = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              <h3 className="text-xl font-semibold mb-2">No projects yet</h3>
-              <p className="text-gray-500 mb-4">You haven't posted any projects yet. Create your first project to get started!</p>
+              <h3 className="text-xl font-semibold mb-2">{t("professional.noProjects")}</h3>
+              <p className="text-gray-500 mb-4">{t("professional.noProjectsDesc")}</p>
               <Dialog>
                 <DialogTrigger asChild>
                   <button className="bg-[#FF4B55] text-white px-4 py-2 rounded hover:bg-[#E43F49] transition-colors">
-                    Post Your First Project
+                    {t("professional.postFirst")}
                   </button>
                 </DialogTrigger>
                 <DialogContent className="max-w-4xl max-h-[90vh] overflow-hidden">
-                  <DialogTitle>Post Your Project</DialogTitle>
+                  <DialogTitle>{t("professional.postProject")}</DialogTitle>
                   <DialogDescription>
-                    Fill out the form below to create a new project.
+                    {t("professional.fillForm")}
                   </DialogDescription>
                   <div className="max-h-[calc(90vh-120px)] overflow-y-auto pr-2">
                     <PostProjectForm />
@@ -192,19 +194,19 @@ const ProfessionalDashboard: React.FC = () => {
             <p className="text-2xl font-bold text-[#121224]">
               {projects.filter(project => project.status === 'active' || !project.status).length}
             </p>
-            <p className="text-[#717B9E]">Active Projects</p>
+            <p className="text-[#717B9E]">{t("professional.activeProjects")}</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-[#121224]">42</p>
-            <p className="text-[#717B9E]">Applications Received</p>
+            <p className="text-[#717B9E]">{t("professional.applicationsReceived")}</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-[#121224]">8</p>
-            <p className="text-[#717B9E]">Workers Hired</p>
+            <p className="text-[#717B9E]">{t("professional.workersHired")}</p>
           </div>
           <div>
             <p className="text-2xl font-bold text-[#121224]">4.8/5</p>
-            <p className="text-[#717B9E]">Average Rating</p>
+            <p className="text-[#717B9E]">{t("professional.averageRating")}</p>
           </div>
         </motion.div>
       </main>

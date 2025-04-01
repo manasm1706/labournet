@@ -21,7 +21,9 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<AvailableLanguages>(() => {
     // Try to get the saved language from localStorage
     const savedLanguage = localStorage.getItem("preferredLanguage");
-    return (savedLanguage as AvailableLanguages) || "en";
+    // Verify that the saved language is a valid AvailableLanguages value
+    const isValid = savedLanguage && (["en", "hi", "mr", "te", "ml", "ta", "kn", "gu", "pa"] as string[]).includes(savedLanguage);
+    return isValid ? (savedLanguage as AvailableLanguages) : "en";
   });
 
   // Save the language preference to localStorage when it changes

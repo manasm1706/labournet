@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -325,7 +324,7 @@ const WorkerDashboard: React.FC = () => {
                     <path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2"/>
                   </svg>
-                  <span>{selectedJob.hourRate}</span>
+                  <span>{selectedJob.hourlyRate}</span>
                 </div>
                 <div className="flex items-start gap-2">
                   <CheckIcon className="h-4 w-4 text-green-500 mt-0.5" />
