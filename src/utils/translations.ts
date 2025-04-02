@@ -1,3 +1,4 @@
+
 export type AvailableLanguages = "en" | "hi" | "mr" | "te" | "ml" | "ta" | "kn" | "gu" | "pa";
 
 // Define the structure of our translations
@@ -608,4 +609,32 @@ export const translations: Translations = {
     "footer.terms": "സേവന നിബന്ധനകൾ",
     "footer.cookies": "കുക്കീസ് ക്രമീകരണങ്ങൾ",
     "footer.quickLinks": "ദ്രുത ലിങ്കുകൾ",
-    "
+    "footer.services": "ഞങ്ങളുടെ സേവനങ്ങൾ",
+    "footer.projectManagement": "പദ്ധതി മാനേജ്മെന്റ്",
+    "footer.ourServices": "ഞങ്ങളുടെ സേവനങ്ങൾ"
+  },
+  
+  ta: {
+    // Adding minimal Tamil translations to prevent errors
+    "header.dashboard": "டாஷ்போர்டு",
+    "footer.quickLinks": "விரைவு இணைப்புகள்"
+  },
+  
+  kn: {
+    // Adding minimal Kannada translations to prevent errors
+    "header.dashboard": "ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+    "footer.quickLinks": "ತ್ವರಿತ ಲಿಂಕ್‌ಗಳು"
+  },
+  
+  gu: {
+    // Adding minimal Gujarati translations to prevent errors
+    "header.dashboard": "ડેશબોર્ડ",
+    "footer.quickLinks": "ઝડપી લિંક્સ"
+  },
+  
+  pa: {
+    // Adding minimal Punjabi translations to prevent errors
+    "header.dashboard": "ਡੈਸ਼ਬੋਰਡ",
+    "footer.quickLinks": "ਤੁਰੰਤ ਲਿੰਕ"
+  }
+};

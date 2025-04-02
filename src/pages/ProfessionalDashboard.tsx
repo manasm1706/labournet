@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Dialog, DialogContent, DialogTitle, DialogDescription, DialogTrigger } from "@/components/ui/dialog";
 import PostProjectForm from "@/components/PostProjectForm";
+import ProfessionalProjectForm from "@/components/ProfessionalProjectForm";
 import { motion } from "framer-motion";
 import Footer from "@/components/layout/Footer";
 import { useProjectContext } from "@/components/PostProjectForm";
@@ -175,7 +176,7 @@ const ProfessionalDashboard: React.FC = () => {
                     {t("professional.fillForm")}
                   </DialogDescription>
                   <div className="max-h-[calc(90vh-120px)] overflow-y-auto pr-2">
-                    <PostProjectForm />
+                    <ProfessionalProjectForm />
                   </div>
                 </DialogContent>
               </Dialog>

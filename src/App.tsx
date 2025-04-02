@@ -96,6 +96,7 @@ const App = () => (
                 <Route path="/project-view/:id" element={<ProjectView />} />
                 <Route path="/professional-messages" element={<ProfessionalMessages />} />
                 <Route path="/professional-projects" element={<ProfessionalProjects />} />
+                <Route path="/professional-analytics" element={<ProfessionalAnalytics />} />
                 <Route path="/contractor-dashboard" element={<ContractorDashboard />} />
                 <Route path="/contractor-job-posting" element={<ContractorJobPosting />} />
                 <Route path="/company-profile" element={<CompanyProfile />} />
@@ -103,7 +104,6 @@ const App = () => (
                 <Route path="/workers" element={<Workers />} />
                 <Route path="/appoint-workers" element={<AppointWorkers />} />
                 <Route path="/analytics" element={<ContractorAnalytics />} />
-                <Route path="/professional-analytics" element={<ProfessionalAnalytics />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>
