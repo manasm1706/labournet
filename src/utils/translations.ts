@@ -280,7 +280,7 @@ export const translations: Translations = {
     "professional.search": "अपनी परियोजनाओं को खोजें...",
     "professional.allCategories": "सभी श्रेणियाँ",
     "professional.searchButton": "खोज",
-    "professional.allProjects": "सभी परियोजनाएँ",
+    "professional.allProjects": "All Projects",
     "professional.active": "सक्रिय",
     "professional.completed": "पूर्ण",
     "professional.noProjects": "अभी तक कोई परियोजना नहीं है",
@@ -564,7 +564,7 @@ export const translations: Translations = {
     "professional.search": "మీ ప్రాజెక్టుల కోసం వెతకండి...",
     "professional.allCategories": "అన్ని వర్గాలు",
     "professional.searchButton": "వెతుకు",
-    "professional.allProjects": "అన్ని ప్రాజెక్టులు",
+    "professional.allProjects": "All Projects",
     "professional.active": "చురుకుగా",
     "professional.completed": "పూర్తయింది",
     "professional.noProjects": "ఇంకా ప్రాజెక్టులు లేవు",
@@ -607,4 +607,5 @@ export const translations: Translations = {
     "footer.privacy": "സ്വകാര്യതാ നയം",
     "footer.terms": "സേവന നിബന്ധനകൾ",
     "footer.cookies": "കുക്കീസ് ക്രമീകരണങ്ങൾ",
-    "footer.quickLinks": "త్వ
+    "footer.quickLinks": "ദ്രുത ലിങ്കുകൾ",
+    "
