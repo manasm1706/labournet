@@ -607,4 +607,4 @@ export const translations: Translations = {
     "footer.privacy": "സ്വകാര്യതാ നയം",
     "footer.terms": "സേവന നിബന്ധനകൾ",
     "footer.cookies": "കുക്കീസ് ക്രമീകരണങ്ങൾ",
-    "footer.quickLinks": "త్వ
+    "footer.quickLinks": "ദ്ര
