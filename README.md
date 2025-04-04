@@ -1,18 +1,14 @@
-# Welcome to your Lovable project
+# Welcome to Labournet project
+LabourNet - Construction Hiring Platform 🚧
+Overview
+LabourNet is a construction workforce management platform that connects workers, contractors, and builders efficiently. Contractors can post jobs and hire skilled workers, while builders can connect with reliable contractors for their projects.
 
-## Project info
-
-**URL**: https://lovable.dev/projects/e03e9649-ef35-4995-b216-9038b7610c85
-
-## How can I edit this code?
-
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/e03e9649-ef35-4995-b216-9038b7610c85) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+Features
+✅ Worker to Contractor – Workers browse & apply for jobs.
+✅ Contractor to Builder – Contractors connect with builders for projects.
+✅ Secure Authentication – JWT-based login & authorization.
+✅ Real-Time Updates – API-driven job postings & applications.
+✅ Scalable Architecture – Cloud-based backend for high performance.
 
 **Use your preferred IDE**
 
@@ -55,15 +51,5 @@ npm run dev
 This project is built with .
 
 - Vite
-- TypeScript
 - React
 - shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/e03e9649-ef35-4995-b216-9038b7610c85) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
