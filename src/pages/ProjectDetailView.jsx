@@ -143,8 +143,8 @@ const ProjectDetailView = () => {
               <div className="text-right">
                 <div className="text-xl font-bold text-[#004A57]">
                   {typeof job.hourlyRate === 'object' 
-                    ? `$${job.hourlyRate.min} - $${job.hourlyRate.max}/hr`
-                    : `$${job.hourlyRate}/hr`}
+                    ? `Rs. ${job.hourlyRate.min} - Rs. ${job.hourlyRate.max}`
+                    : `Rs. ${job.hourlyRate}`}
                 </div>
                 <div className="text-sm text-gray-500">
                   {typeof job.timeline === 'object' 

@@ -90,7 +90,7 @@ const ContractorNavbar = () => {
             { path: "/contractor-dashboard", label: "Dashboard" },
             { path: "/contractor-job-posting", label: "Jobs" },
             { path: "/workers", label: "Workers" },
-            { path: "/analytics", label: "Analytics" },
+           
           ].map(({ path, label }) => (
             <NavigationMenuItem key={path}>
               <Link 

@@ -340,17 +340,17 @@ const ContractorDashboard = () => {
                       </svg>
                       {project.location}
                     </p>
-                    <p className="text-sm text-gray-500 mb-3 flex items-center gap-1">
+                    <p className="text-sm text-gray-500 mb-1 flex items-center gap-1">
                       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                         <circle cx="12" cy="7" r="4"></circle>
                       </svg>
-                      Posted by: {project.builderName}
+                      Posted by: {project.postedBy?.fullName || project.postedBy?.businessName || "N/A"}
                     </p>
                     <div className="flex justify-between items-center">
-                      <span className="text-[#FF4B55] font-bold">
-                        ${project.hourlyRate?.min}-{project.hourlyRate?.max}/hr
-                      </span>
+                      {/* <span className="text-[#FF4B55] font-bold">
+                        Rs. {project.hourlyRate?.min} /-
+                      </span> */}
                       <button
                         className="text-[#FF4B55] text-sm font-medium border border-[#FF4B55] px-3 py-1 rounded hover:bg-[#FF4B55] hover:text-white"
                         onClick={(e) => {

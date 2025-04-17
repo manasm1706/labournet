@@ -148,9 +148,8 @@ const ProfessionalMessages = () => {
           </Link>
           <nav className="hidden md:flex space-x-6 ml-12">
             <Link to="/professional-dashboard" className="hover:text-[#FF4B55]">Dashboard</Link>
-            <Link to="/professional-job-posting" className="hover:text-[#FF4B55]">Jobs</Link>
             <Link to="/professional-messages" className="hover:text-[#FF4B55] text-[#FF4B55]">Messages</Link>
-            <Link to="/analytics" className="hover:text-[#FF4B55]">Analytics</Link>
+           
           </nav>
         </div>
         <div 

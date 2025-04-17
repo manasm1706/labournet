@@ -338,7 +338,7 @@ const ProfessionalDashboard = () => {
                 <div className="flex justify-between mb-3">
                   <h2 className="text-lg font-semibold text-[#121224]">{project.title}</h2>
                   <span className="text-[#FF4B55] font-bold">
-                    ${project.hourlyRate?.min}-${project.hourlyRate?.max}/hr
+                    Rs. {project.hourlyRate || "N/A"} /-
                   </span>
                 </div>
                 <p className="text-[#717B9E] mb-4">{project.jobDescription?.substring(0, 150)}...</p>
